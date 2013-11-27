@@ -1,0 +1,18 @@
+<% if @session['user'].nil?%>
+    <div id="videoContestSignupForm">
+        <p>Sorry, you must be a registered user of Heyudo to enter. You could always 
+        <%= link_to "signup", :controller => "account", :action => "signup" %> for free :)</p>
+    </div>
+<% else %>
+    <div id="videoContestSignupForm">
+      <p>Hi, <%= @session['user'].login %></p>
+      <%= start_form_tag ({:action => 'video_signup_send'}, :multipart => true) %>
+      <%= error_messages_for 'main' %>
+        <p>
+        <label for="video_url">Please enter the url to the Youtube page for your video:</label>
+        </p>
+        <p><%= text_field 'video', 'url', :size => 50, :maxlength => 70 %></p>
+        <p><%= submit_tag "Submit your entry", :alt => "Submit" %></p>
+    <%= end_form_tag %>
+    </div>
+<% end %>

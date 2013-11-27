@@ -1,0 +1,77 @@
+<%= error_messages_for 'post' %>
+
+<!--[form:post]-->
+<fieldset>
+  <legend>Request Description</legend>
+  <p>
+    <label for="post_title">Request title:</label>
+    <%= text_field 'post', 'title', :size => 53  %>
+  </p>
+  <p>
+    <label for="post_body">Describe what you need done:</label>
+    <%= text_area 'post', 'body'  %>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Request Location</legend>
+  <p>
+    <label for="post_city">What city are you in?:</label>
+    <%= text_field 'post', 'city', :size => 20  %>
+  </p>
+  <p>
+    <label for="post_state">What state are you in?:</label>
+    <%= options = [["Select state", ""]] + Post::STATE_SELECT
+      select('post', 'state', options) %>
+  <p>
+</fieldset>
+
+<fieldset>
+  <legend>Request Details</legend>
+  <p>
+    <label for="post_state">Select a service category:</label>
+    <%= options = [["Select category", ""]] + Post::CATEGORY_SELECT
+      select('post', 'category', options) %>
+  </p>
+  <p>
+    <label for="post_recurring">Will this be a one-time or recurring service?</label>
+    <%= options = [["Select job type", ""]] + Post::RECURRING
+      select("post", "recurring", options) %>
+  </p>
+  <p>
+    <label for="post_recurring">How often will you need this service performed? (only if you selected a recurrung service)</label>
+    <%= options = [["Select frequency", ""]] + Post::FREQUENCY
+      select("post", "frequency", options) %>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Bid Info</legend>
+  <p>
+    <label for="post_cap">What's the most you're willing to pay for this service? (each time if you selcted a recurring service)</label>
+    <b>$</b><%= text_field 'post', 'cap', :size => 4  %><b>.00</b>
+  </p>
+  <p>
+    <label for="post_end_date">What date would you like bidding to end?</label>
+    <%= date_select 'post', 'end_date'  %>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Pictures (optional)</legend>
+  <p>
+    <label for="post_pic_1">Picture 1:</label>
+    <%= file_column_field "post", "pic_1" %>
+  </p>
+  <p>
+    <label for="post_pic_2">Picture 2:</label>
+    <%= file_column_field "post", "pic_2" %>
+  </p>
+  <p>
+    <label for="post_pic_3">Picture 3:</label>
+    <%= file_column_field "post", "pic_3" %>
+  </p>
+</fieldset>
+
+<!--[eoform:post]-->
+

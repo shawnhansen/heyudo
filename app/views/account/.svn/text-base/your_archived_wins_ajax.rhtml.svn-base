@@ -1,0 +1,35 @@
+<h3>Your archived wins:</h3>
+    <table cellspacing="0" class="blackBorder">
+      <thead>
+        <tr>
+          <th>Post Title</th>
+          <th>Winning Bid</th>
+          <th>Ended On</th>
+          <th>Poster info</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @zebra = 0 %>
+      <% for post in @won_posts.reverse do %>
+      <% if post.accepted == 1 %>
+      <% if post.bidder_delete_id == @session['user'].id %>
+      <% else %>
+        <% @zebra = (@zebra + 1) %>
+        <% if @zebra % 2 == 1 %>
+        <tr class="zebraOdd" id="<%= post.id %>">
+        <% else %>
+        <tr id="<%= post.id %>">
+        <% end %>
+          <td><b><%= link_to post.title, :controller => 'post', :action => 'show', :id => post %></b></td>
+          <td>$ <%=h post.winning_bid %></td>
+          <td><%=h post.end_date %></td>
+          <td><b><%= link_to "View posters contact info", :controller => 'bid', :action => 'review_contact_info', :post => post.id %></b></td>
+          <td><%= link_to_remote("#{image_tag('delete_button_inbox.png')}", :loading => "new Effect.Puff('#{post.id}')", :url => { :controller => 'post', :action => 'bidder_pre_destroy', :id => post.id }, :confirm => 'Are you sure you want to delete this post permanently?', :post => true) %></td>
+        </tr>
+      <% end %>
+      <% end %>
+      <% end %>
+      </tbody>
+    </table>
+    <p class="infoMessages">This is where old posts you've won go to die.  Feel free to delete them,
+        or keep them around for posterity.</p>

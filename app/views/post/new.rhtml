@@ -1,0 +1,191 @@
+<div id="postNew">
+<%= start_form_tag ({:action => 'create'}, :multipart => true) %>
+  <%= error_messages_for 'post' %>
+
+<!--[form:post]-->
+<div id="postNewPage1">
+  <h1>Request Description</h1>
+  <div id="wizardXButton">
+  <%= link_to_remote("#{image_tag('wizard_X_button.png', :alt => 'Close')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+  </div>
+  <p class="wizardInfoText">
+    Just fill out the details about what you need done using this wizard. When you're done with 
+    a page click the "next" button below
+  </p>
+  <p>
+    <label for="post_title">Request title: (at least 7 characters)  *required</label>
+  </p>
+    <%= text_field 'post', 'title', :size => 50, :maxlength => 70 %>
+  <p>
+    <label for="post_body">Describe what you need done:  *required</label>
+  </p>
+    <%= text_area 'post', 'body', :cols => 50, :rows => 5, :maxlength => 1500 %>
+  <p class="postNewBoxButtons">
+<%= link_to_remote("#{image_tag('post_new_cancel_button.png', :alt => 'Cancel')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+<%= link_to_function("#{image_tag('post_new_next_button.png', :alt => 'Next')}", "Element.toggle('postNewPage1','postNewPage2')") %>
+  </p>
+</div>
+
+<div id="postNewPage2" style="display: none;">
+  <h1>Your Location</h1>
+  <div id="wizardXButton">
+  <%= link_to_remote("#{image_tag('wizard_X_button.png', :alt => 'Close')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+  </div>
+  <p class="wizardInfoText">
+    Fill out the information about where you need this service performed below. Even if you think 
+    your post is not "location specific" you should still fill this out as accurately as possible.
+  </p>
+  <p>
+    <label for="post_city">What city are you in?:  *required</label>
+  </p>
+    <%= text_field 'post', 'city', :size => 20, :maxlength => 25  %>
+  <p>
+    <label for="post_state">What state are you in?:  *required</label>
+  </p>
+    <%= options = [["Select state", ""]] + Post::STATE_SELECT
+      select('post', 'state', options) %>
+  <p class="postNewBoxButtons">
+<%= link_to_remote("#{image_tag('post_new_cancel_button.png', :alt => 'Cancel')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+<%= link_to_function("#{image_tag('post_new_back_button.png', :alt => 'Back')}", "Element.toggle('postNewPage2','postNewPage1')") %>
+<%= link_to_function("#{image_tag('post_new_next_button.png', :alt => 'Next')}", "Element.toggle('postNewPage2','postNewPage3')") %>
+  </p>
+</div>
+
+<div id="postNewPage3" style="display: none;">
+
+  <h1>Request Details</h1>
+  <div id="wizardXButton">
+  <%= link_to_remote("#{image_tag('wizard_X_button.png', :alt => 'Close')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+  </div>
+  <p class="wizardInfoText">
+    Select a category for your post. Then specify whether you post is a "single task" or "continuous service". 
+    "single task" would be something like having a website built, "continuous service" would be a service 
+    with no definite end like having someone mow your lawn every week.
+  </p>
+  <p>
+    <label for="post_recurring">Will this be a single task or continuous service?  *required</label>
+  </p>
+    <%= options = [["Select Single task/Continuous service", ""]] + Post::RECURRING
+      select("post", "recurring", options) %>
+  <p>
+  <p>
+    <label for="post_end_date">How long before you'd like bidding to end?  *required</label>
+  </p>
+    <%= options = [["How long should this post run?", ""]] + Post::POST_LENGTH
+      select("post", "end_date", options) %>
+  <p class="postNewBoxButtons">
+<%= link_to_remote("#{image_tag('post_new_cancel_button.png')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+<%= link_to_function("#{image_tag('post_new_back_button.png', :alt => 'Back')}", "Element.toggle('postNewPage3','postNewPage2')") %>
+<%= link_to_function("#{image_tag('post_new_next_button.png', :alt => 'Next')}", "Element.toggle('postNewPage3','postNewPage4')") %>
+  </p>
+</div>
+
+<div id="postNewPage4" style="display: none;">
+  <h1>Bid Info</h1>
+  <div id="wizardXButton">
+  <%= link_to_remote("#{image_tag('wizard_X_button.png', :alt => 'Close')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+  </div>
+  <p class="wizardInfoText">
+    Specifiy what date you'd like bidding to end as well as the most you're willing to pay to 
+    have this service done. Bidders will not see the actual amount you set as your maximum, but 
+    they will be told if they are bidding higher.
+  </p>
+  <p>
+    <label for="post_rate">Select how you want people to bid on this post ("By task" means a lump some payment when your task is completed: *required</label>
+  </p>
+  <p>
+    <%= options = [["Bid Type?", ""]] + Post::RATE
+      select("post", "rate", options) %>
+  </p>
+  <p>
+    <label for="post_cap">What's the most you're willing to pay for this service? (Hourly if you selected "Hourly rate" above, lump some if you selected "By task")  *required</label>
+  </p>
+  <p>
+    $<%= text_field 'post', 'cap', :size => 4, :class => "bidEntry" %>.00
+  </p>
+  <p class="postNewBoxButtons">
+<%= link_to_remote("#{image_tag('post_new_cancel_button.png', :alt => 'Cancel')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+<%= link_to_function("#{image_tag('post_new_back_button.png', :alt => 'Back')}", "Element.toggle('postNewPage4','postNewPage3')") %>
+<%= link_to_function("#{image_tag('post_new_next_button.png', :alt => 'Next')}", "Element.toggle('postNewPage4','postNewPage5')") %>
+  </p>
+</div>
+
+<div id="postNewPage5" style="display: none;">
+  <h1>Pictures (optional)</h1>
+  <div id="wizardXButton">
+  <%= link_to_remote("#{image_tag('wizard_X_button.png', :alt => 'Close')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+  </div>
+  <p class="wizardInfoText">
+    Feel free to upload some images here. A Picture speaks a thousand words :)
+  </p>
+  <p>
+    <label for="post_pic_1">Picture 1: (optional)</label>
+  </p>
+    <%= file_column_field "post", "pic_1" %>
+  <p>
+    <label for="post_pic_2">Picture 2: (optional)</label>
+  </p>
+    <%= file_column_field "post", "pic_2" %>
+  <p>
+    <label for="post_pic_3">Picture 3: (optional)</label>
+  </p>
+    <%= file_column_field "post", "pic_3" %>
+  <p class="postNewBoxButtons">
+<%= link_to_remote("#{image_tag('post_new_cancel_button.png', :alt => 'Cancel')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Fade('postNewBox')", 
+          :url => {}) %>
+<%= link_to_function("#{image_tag('post_new_back_button.png', :alt => 'Back')}", "Element.toggle('postNewPage5','postNewPage4')") %>
+
+<!--[eoform:post]-->
+  <%= image_submit_tag "post_new_create_button.png", :alt => "Create", :class => "submit" %>
+  </p>
+</div>
+<%= end_form_tag %>
+
+</div>

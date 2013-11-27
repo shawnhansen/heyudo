@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="198"
+   name=""
+   committed-date="2006-09-21T04:01:32.949535Z"
+   url="http://svn.heyudo.com/heyudosvn/vendor/plugins/exception_notification"
+   last-author="smh"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   committed-rev="198"
+   name="init.rb"
+   text-time="2007-03-02T16:40:59.454318Z"
+   committed-date="2006-09-21T04:01:32.949535Z"
+   checksum="d68a35cf6df012c7fd6562da6355a201"
+   last-author="smh"
+   kind="file"
+   prop-time="2007-03-02T16:40:58.048318Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   name="views"
+   kind="dir"/>
+<entry
+   committed-rev="198"
+   name="README"
+   text-time="2007-03-02T16:40:59.462318Z"
+   committed-date="2006-09-21T04:01:32.949535Z"
+   checksum="fe84727e1adb78f3b7c59207d612720b"
+   last-author="smh"
+   kind="file"
+   prop-time="2007-03-02T16:40:59.192318Z"/>
+</wc-entries>

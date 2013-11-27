@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   sodipodi:docbase="/home/jasbur/heyudo/svn/assets"
+   sodipodi:docname="user_info_bottom.svg"
+   inkscape:export-filename="/home/jasbur/heyudo/svn/public/images/user_info_bottom.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="375"
+     inkscape:cy="680"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1120"
+     inkscape:window-height="866"
+     inkscape:window-x="3"
+     inkscape:window-y="45" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#fffab1;fill-opacity:1;stroke:none;stroke-width:2.10100007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2202"
+       width="241"
+       height="14.161"
+       x="-355"
+       y="-329.36218"
+       transform="scale(-1,-1)" />
+    <path
+       style="opacity:1;fill:#68b8df;fill-opacity:1;stroke:none;stroke-width:2.10100007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 339.93376,329.37058 C 347.67318,329.03019 353.85942,322.90941 354.3125,315.21433 L 114.3125,315.21433 C 114.77881,323.13417 121.32389,329.37058 129.37892,329.37058 L 339.24608,329.37058 C 339.47467,329.37058 339.70769,329.38052 339.93376,329.37058 z "
+       id="rect1307"
+       inkscape:export-filename="/home/jasbur/heyudo/svn/public/images/user_info_bottom.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

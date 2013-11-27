@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2006-08-02T15:35:03.880584Z"
+   url="http://svn.heyudo.com/heyudosvn/test/fixtures/notifier"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+</wc-entries>

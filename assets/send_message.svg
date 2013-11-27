@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   sodipodi:docbase="/home/jasbur/heyudo/heyudosvn/assets"
+   sodipodi:docname="send_message.svg"
+   inkscape:export-filename="/home/jasbur/heyudo/heyudosvn/public/images/send_message.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient2246">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop2248" />
+      <stop
+         id="stop2254"
+         offset="0.11734694"
+         style="stop-color:#52adda;stop-opacity:1;" />
+      <stop
+         style="stop-color:#7dc2e4;stop-opacity:1;"
+         offset="0.4107143"
+         id="stop2260" />
+      <stop
+         style="stop-color:#b5ddf0;stop-opacity:1;"
+         offset="1"
+         id="stop2250" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2805">
+      <stop
+         id="stop2807"
+         offset="0"
+         style="stop-color:white;stop-opacity:0.36458334;" />
+      <stop
+         id="stop2809"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4007">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4009" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4011" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2182">
+      <stop
+         id="stop2192"
+         offset="0"
+         style="stop-color:#6ab9df;stop-opacity:1;" />
+      <stop
+         style="stop-color:#2787b6;stop-opacity:1;"
+         offset="1"
+         id="stop2186" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2246"
+       id="linearGradient2252"
+       x1="288"
+       y1="196.17468"
+       x2="288"
+       y2="252.54968"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.644903,0,0,0.59336,44.06836,71.73467)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.4228303"
+     inkscape:cx="227.13367"
+     inkscape:cy="847.50001"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1099"
+     inkscape:window-height="903"
+     inkscape:window-x="39"
+     inkscape:window-y="31" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2262"
+       width="208.0116"
+       height="33.688835"
+       x="125.71135"
+       y="187.98355" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient2252);fill-opacity:1;stroke:#7cc2e4;stroke-width:2.70635223;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1371"
+       width="205.07915"
+       height="30.854713"
+       x="127.26086"
+       y="189.43481"
+       rx="15"
+       ry="15"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:15.13431358px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:MgOpen Moderna"
+       x="138.423"
+       y="209.63408"
+       id="text2256"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2258"
+         x="138.423"
+         y="209.63408">Send this user a message</tspan></text>
+  </g>
+</svg>

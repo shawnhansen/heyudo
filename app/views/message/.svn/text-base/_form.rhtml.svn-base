@@ -1,0 +1,10 @@
+<%= error_messages_for 'message' %>
+
+<!--[form:post]-->
+<p><label for="message_subject">Subject: *required</label><br/>
+<%= text_field 'message', 'subject', :size => 40 %></p>
+
+<p><label for="message_body">Body: *required</label><br/>
+<%= text_area 'message', 'body', :cols => 40, :rows => 10  %></p>
+
+<!--[eoform:post]-->

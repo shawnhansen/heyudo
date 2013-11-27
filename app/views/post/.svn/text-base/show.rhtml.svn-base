@@ -1,0 +1,122 @@
+<% @page_title = @post.title %>
+<% @page_desc = "#{@post.body}" [0,200]%>
+<div id="postShowAd">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4000454371917145";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "FFFFFF";
+google_color_bg = "52ADDA";
+google_color_link = "FFFFFF";
+google_color_text = "FFFFFF";
+google_color_url = "F0F0FF";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<div id="whatsThisBoxPostShowReputation" style="display:none">
+</div>
+<div id="postShow">
+<h2><%=h @post.title %></h2>
+<div id="postShowContent">
+<h3>Posted By: <%= link_to @post.user.login, :controller => 'account', :action => 'show', :id => @post.user_id %> | Reputation (<% if @post.user.reputation_points >= 2000 %><font color="#00C408"><% else %><% if @post.user.reputation_points < 900 %><font color="#FF0000"><% else %><font color="#BDC900"><% end %><% end %><%= @post.user.reputation_points %></font>)
+<span id="whatsThisLink"><%= link_to_remote("What's this?", 
+                                  :update => 'whatsThisBoxPostShowReputation', 
+                                  :complete => visual_effect(:blind_down, 'whatsThisBoxPostShowReputation'), 
+                                  :url => { :controller => 'account', 
+                                  :action => 'reputation_whats_this'}) %></span></h3>
+<%= link_to_remote("#{image_tag('send_message.png', :alt => 'Send this user a message')}", 
+      :update => 'messageBox', 
+      :complete => visual_effect(:appear, 'messageBox'), 
+      :url => { :controller => 'message', 
+      :action => 'send_message', 
+      :receiver => @post.user.id, 
+      :post => @post.id}) %>
+
+<div id="postShowBids">
+<h4>Lowest Bids:</h4> 
+<ul>
+<% if @bids.empty? %>
+<li>--No bids yet--</li>
+<% else %>
+<% for bid in @bids.reverse do %>
+<% if @post.rate == "Hourly rate"%>
+<li>$<%=h bid.amount %>/hr by <%= link_to bid.user.login, :controller => 'account', :action => 'show', :id => bid.user.id %></li>
+<% else %>
+<li>$<%=h bid.amount %> by <%= link_to bid.user.login, :controller => 'account', :action => 'show', :id => bid.user.id %></li>
+<% end %>
+<% end %>
+<% end %>
+</ul>
+
+<% if @post.end_date < Time.now.to_date %>
+<% if @post.user_id == @session['user'].id %>
+<% if @post.winner == nil %>
+<%= link_to "Choose which bid you want to accept", :action => 'accept', :post => @post.id %>
+<% end %>
+<% end %>
+<% end %>
+<% if @post.end_date >= Time.now.to_date %>
+<%= link_to image_tag ("place_bid.png", :alt => "Place a bid"), :controller => 'bid', :action => 'place', :post => @post.id %>
+<% else %>
+<% end %>
+</div>
+
+<div id="messageBox" style="display:none">
+</div>
+<%= draggable_element("messageBox") %>
+
+<div id="postShowDetails">
+<ul>
+<li><b>Post Ending: </b> <%=h @post.end_date %></li>
+<li><% if @post.recurring == 1 %>
+<%= " <b>This is a:</b> Continuous Service" %>
+<% else %>
+<%= " <b>This is a:</b> Single Task" %>
+<% end %></li>
+<li><b>City: </b> <%=h @post.city %></li>
+<li><b>State: </b> <%=h @post.state %></li>
+<li><b>Posted on: </b> <%=h @post.date_posted %></li>
+</ul>
+</div>
+<h3>Description:</h3>
+<p><%=h @post.body %></p>
+<div id="postShowImages">
+<% if @post.pic_1 == nil %>
+<%= image_tag ("post_no_pic.png")%>
+<% else %>
+<%= image_tag url_for_file_column ("post", "pic_1") if @post.pic_1 %>
+<% end %>
+<% if @post.pic_2 == nil %>
+<%= image_tag ("post_no_pic.png")%>
+<% else %>
+<%= image_tag url_for_file_column ("post", "pic_2") if @post.pic_2 %>
+<% end %>
+<% if @post.pic_3 == nil %>
+<%= image_tag ("post_no_pic.png")%>
+<% else %>
+<%= image_tag url_for_file_column ("post", "pic_3") if @post.pic_3 %>
+<% end %>
+</div>
+
+
+<div id="postShowOtherPosts">
+<h4>Other posts in this area</h4>
+<% if @other_posts.length > 0 %>
+<ul><% for post in @other_posts do %>
+<li><b><%= link_to "#{post.title}" [0,15] + "...", :controller => 'post', :action => 'show', :id => post %></b> | <%=h post.city %></li>
+<% end %></ul>
+<p>View all posts in this <%= link_to "city", :controller => 'post', 
+                                              :action => 'show_search', 
+                                              :query => post.city %>
+<% else %>
+<p>No other posts in this city right now :(</p>
+<% end %>
+</p>
+</div>
+</div>
+</div>

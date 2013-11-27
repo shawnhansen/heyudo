@@ -1,0 +1,37 @@
+<%= error_messages_for 'bill' %>
+
+<!--[form:bill]-->
+<p><label for="bill_name_on_card">Name (as it appears on card):</label><br/>
+<%= text_field 'bill', 'name_on_card'  %></p>
+
+<p><label for="bill_street_address">Street adress:</label><br/>
+<%= text_field 'bill', 'street_address'  %></p>
+
+<p><label for="bill_city">City:</label><br/>
+<%= text_field 'bill', 'city'  %></p>
+
+<p>
+<%= options = [["Select state", ""]] + Bill::STATE_SELECT
+select("bill", "state", options) %></p>
+
+<p><label for="bill_zip_code">Zip code:</label><br/>
+<%= text_field 'bill', 'zip_code'  %></p>
+
+<p><label for="bill_cc_type">Card type:</label><br/>
+<%= options = [["Select card type", ""]] + Bill::CARD_TYPE
+select("bill", "cc_type", options) %></p>
+
+<p><label for="bill_cc_number">Number on card:</label><br/>
+<%= text_field 'bill', 'cc_number'  %></p>
+
+<p><b>Card expiration</b></p>
+
+<p>
+<%= options = [["Month", ""]] + Bill::EXP_MONTH
+select("bill", "cc_exp_month", options) %></p>
+
+<p>
+<%= options = [["Year", ""]] + Bill::EXP_YEAR
+select("bill", "cc_exp_year", options) %></p>
+<!--[eoform:bill]-->
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="154"
+   name=""
+   committed-date="2006-08-27T01:25:26.158085Z"
+   url="http://svn.heyudo.com/heyudosvn/app/views/notifier"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   committed-rev="1"
+   name="new_message.rhtml"
+   text-time="2007-03-02T16:40:49.772318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="bbe58fb1e1b9555cb7212d11eb2af2bd"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:49.684318Z"/>
+<entry
+   committed-rev="1"
+   name="signup_thanks.rhtml"
+   text-time="2007-03-02T16:40:49.779318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="cc1baee817fc276e43e185213545b5dd"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:49.691318Z"/>
+<entry
+   committed-rev="148"
+   name="been_accepted.rhtml"
+   text-time="2007-03-02T16:40:49.994318Z"
+   committed-date="2006-08-24T22:05:05.078160Z"
+   checksum="bdeab27df64a25f0efdf28a4a213fa62"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:49.723318Z"/>
+<entry
+   committed-rev="54"
+   name="forgot_password.rhtml"
+   text-time="2007-03-02T16:40:50.023318Z"
+   committed-date="2006-08-10T02:32:56.009768Z"
+   checksum="9b81399f76c22f6bbcb4186549dd5097"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:49.744318Z"/>
+<entry
+   committed-rev="1"
+   name="new_reply.rhtml"
+   text-time="2007-03-02T16:40:50.030318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="ba75d20e705bb17cf3dcfba092558609"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:49.750318Z"/>
+<entry
+   committed-rev="154"
+   name="payment_complete.rhtml"
+   text-time="2007-03-02T16:40:50.037318Z"
+   committed-date="2006-08-27T01:25:26.158085Z"
+   checksum="5b6e9ad67b219830dc458596ba043f70"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:49.756318Z"/>
+<entry
+   committed-rev="145"
+   name="waiting_post.rhtml"
+   text-time="2007-03-02T16:40:50.044318Z"
+   committed-date="2006-08-24T18:39:14.989938Z"
+   checksum="4b50f66b0dd305f79c84af661c645429"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:49.762318Z"/>
+</wc-entries>

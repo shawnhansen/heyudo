@@ -1,0 +1,77 @@
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+
+    Methods
+
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Methods</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="rdoc-style.css" type="text/css" />
+  <base target="docwin" />
+</head>
+<body>
+<div id="index">
+  <h1 class="section-bar">Methods</h1>
+  <div id="index-entries">
+    <a href="classes/PostController.html#M000043">accept (PostController)</a><br />
+    <a href="classes/BidController.html#M000015">accept (BidController)</a><br />
+    <a href="classes/PostController.html#M000044">accept_all (PostController)</a><br />
+    <a href="classes/PostController.html#M000045">accepted (PostController)</a><br />
+    <a href="classes/User.html#M000016">authenticate (User)</a><br />
+    <a href="classes/ApplicationController.html#M000032">below_cap (ApplicationController)</a><br />
+    <a href="classes/User.html#M000017">change_password (User)</a><br />
+    <a href="classes/BidController.html#M000014">completed (BidController)</a><br />
+    <a href="classes/PostController.html#M000037">create (PostController)</a><br />
+    <a href="classes/BillingController.html#M000024">create (BillingController)</a><br />
+    <a href="classes/User.html#M000019">crypt_password (User)</a><br />
+    <a href="classes/AccountController.html#M000003">delete (AccountController)</a><br />
+    <a href="classes/PostController.html#M000040">destroy (PostController)</a><br />
+    <a href="classes/MessageController.html#M000051">destroy (MessageController)</a><br />
+    <a href="classes/BillingController.html#M000027">destroy (BillingController)</a><br />
+    <a href="classes/PostController.html#M000038">edit (PostController)</a><br />
+    <a href="classes/BillingController.html#M000025">edit (BillingController)</a><br />
+    <a href="classes/AccountController.html#M000009">feedback (AccountController)</a><br />
+    <a href="classes/ApplicationController.html#M000029">has_viewed_post (ApplicationController)</a><br />
+    <a href="classes/PostController.html#M000033">index (PostController)</a><br />
+    <a href="classes/BillingController.html#M000020">index (BillingController)</a><br />
+    <a href="classes/ApplicationController.html#M000031">is_low_bid (ApplicationController)</a><br />
+    <a href="classes/PostController.html#M000034">list (PostController)</a><br />
+    <a href="classes/BillingController.html#M000021">list (BillingController)</a><br />
+    <a href="classes/ApplicationController.html#M000028">logged_in (ApplicationController)</a><br />
+    <a href="classes/AccountController.html#M000001">login (AccountController)</a><br />
+    <a href="classes/AccountController.html#M000004">logout (AccountController)</a><br />
+    <a href="classes/BillingController.html#M000023">new (BillingController)</a><br />
+    <a href="classes/PostController.html#M000036">new (PostController)</a><br />
+    <a href="classes/BidController.html#M000013">place (BidController)</a><br />
+    <a href="classes/MessageController.html#M000049">reply (MessageController)</a><br />
+    <a href="classes/PostController.html#M000041">search (PostController)</a><br />
+    <a href="classes/ApplicationController.html#M000030">self_bid (ApplicationController)</a><br />
+    <a href="classes/MessageController.html#M000046">send_message (MessageController)</a><br />
+    <a href="classes/MessageController.html#M000047">sent_message (MessageController)</a><br />
+    <a href="classes/MessageController.html#M000050">sent_reply (MessageController)</a><br />
+    <a href="classes/AccountController.html#M000006">settings (AccountController)</a><br />
+    <a href="classes/AccountController.html#M000007">settings_save (AccountController)</a><br />
+    <a href="classes/User.html#M000018">sha1 (User)</a><br />
+    <a href="classes/PostController.html#M000035">show (PostController)</a><br />
+    <a href="classes/BillingController.html#M000022">show (BillingController)</a><br />
+    <a href="classes/MessageController.html#M000048">show (MessageController)</a><br />
+    <a href="classes/AccountController.html#M000008">show (AccountController)</a><br />
+    <a href="classes/PostController.html#M000042">show_search (PostController)</a><br />
+    <a href="classes/AccountController.html#M000002">signup (AccountController)</a><br />
+    <a href="classes/AccountController.html#M000011">thumbs_down (AccountController)</a><br />
+    <a href="classes/AccountController.html#M000010">thumbs_up (AccountController)</a><br />
+    <a href="classes/PostController.html#M000039">update (PostController)</a><br />
+    <a href="classes/BillingController.html#M000026">update (BillingController)</a><br />
+    <a href="classes/MainController.html#M000012">welcome (MainController)</a><br />
+    <a href="classes/AccountController.html#M000005">welcome (AccountController)</a><br />
+  </div>
+</div>
+</body>
+</html>

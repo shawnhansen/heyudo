@@ -1,0 +1,53 @@
+<% if @search_string.nil? %>
+<div id="search_hits">
+<h2>No search term entered. We can't help you if you don't give us something to search for :)</h2>
+<h2>Go Back and try again</h2>
+</div>
+<% else %>
+<% @page_title = "Results for: " + @search_string %>
+<% @page_desc = "Resulting posts from search or browse"%>
+<div id="liveSearch">
+<h3>Search Heyudo:</h3>
+<%= start_form_tag ({:action => 'show_search'}, :multipart => true) %>
+<%= text_field_tag :query %>
+<%= submit_tag "Search", :class => "submit" %>
+<p>(example: computer repair denver, co OR painter needed, wisconsin)</p>
+</div>
+<div id="search_hits">
+<% if @posts.nil? %>
+<p>No Results</p>
+<% else %>
+<h2><%=h number_with_delimiter(@result_num.length) %> results for "<%=h @search_string %>"</h2><span id="rssSearchHits"><%= link_to image_tag("feed-icon-16x16.png"), :controller => 'main', :action => 'custom_rss', :query => @query %><%= link_to "Get the RSS feed for this search", :controller => 'main', :action => 'custom_rss', :query => @query %></span>
+<table cellspacing="0" class="blackBorder">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Location</th>
+          <th>Ending</th>
+        </tr>
+      </thead>
+      <tbody>
+<% @zebra = 0 %>
+<% for post in @posts do %>
+    <% @zebra = (@zebra + 1) %>
+    <% if @zebra % 2 == 1 %>
+  <tr class="zebraOdd">
+  <% else %>
+  <tr>
+  <% end %>
+  <td class="searchPostTitle"><%= link_to post.title, :action => 'show', :id => post %></td>
+  <td class="searchPostBody"><%= "#{post.body}" [0,70] %>...</td>
+  <td class="searchPostCity"><%= link_to post.city, :controller => 'post', :action => 'show_search', :query => post.city %>, <%= link_to post.state.slice(-2,2), :controller => 'post', :action => 'show_search', :query => post.state %></td>
+  <td class="searchPostEnding">Ending: <%=h post.end_date %></td>
+  </tr>
+    <% end %>
+</tbody>        
+    </table>
+<% end %>
+<p class="resultsPagLinks">
+<%= link_to '<< Previous 20', { :page => @post_pages.current.previous, :query => @query } if @post_pages.current.previous %>
+<%= link_to 'Next 20 >>', { :page => @post_pages.current.next, :query => @query } if @post_pages.current.next %>
+</p>
+</div>
+<% end %>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+   sodipodi:docbase="C:\Documents and Settings\Jason\My Documents\Projects\heyudo\assets"
+   sodipodi:docname="your_bids_button_bing.svg"
+   inkscape:export-filename="C:\Documents and Settings\Jason\My Documents\Projects\heyudo\public\images\your_bids_button_bing.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="6.990991"
+     inkscape:cx="234.85271"
+     inkscape:cy="475"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="874"
+     inkscape:window-height="589"
+     inkscape:window-x="235"
+     inkscape:window-y="219" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#fffaff;fill-opacity:1"
+       id="rect6053"
+       width="113.21779"
+       height="29.78866"
+       x="197.85567"
+       y="574.3609" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#68b8df;stroke-width:2.10100007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1307"
+       width="111"
+       height="28"
+       x="199"
+       y="575.36218"
+       ry="10"
+       rx="10" />
+    <text
+       xml:space="preserve"
+       style="font-size:20.66515732px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#68b8df;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:MgOpen Modata"
+       x="209.68927"
+       y="596.26941"
+       id="text1309"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3100"
+         x="209.68927"
+         y="596.26941">your bids</tspan></text>
+    <rect
+       rx="4.421392"
+       ry="3.7061856"
+       y="574.37634"
+       x="198.14175"
+       height="16.985825"
+       width="112.85954"
+       id="rect10288"
+       style="opacity:0.25274724;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.10100007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>

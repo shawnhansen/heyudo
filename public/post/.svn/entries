@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="28"
+   name=""
+   committed-date="2006-08-04T14:29:10.231399Z"
+   url="http://svn.heyudo.com/heyudosvn/public/post"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   name="pic_1"
+   kind="dir"/>
+<entry
+   name="pic_2"
+   kind="dir"/>
+<entry
+   name="pic_3"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   sodipodi:docbase="/home/jasbur/heyudo/heyudosvn/assets"
+   sodipodi:docname="post_new_next_button.svg"
+   inkscape:export-filename="/home/jasbur/heyudo/heyudosvn/public/images/post_new_next_button.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="281.15612"
+     inkscape:cy="460"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="874"
+     inkscape:window-height="589"
+     inkscape:window-x="15"
+     inkscape:window-y="125" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#68b8df;fill-opacity:1"
+       id="rect1479"
+       width="61.520824"
+       height="25"
+       x="197.98959"
+       y="579.36218" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#37a4d7;stroke-width:1.8719157;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1307"
+       width="59.933189"
+       height="23"
+       x="198.7834"
+       y="580.36218"
+       ry="10"
+       rx="10" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.57099152px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#37a4d7;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:MgOpen Modata"
+       x="209.68927"
+       y="597.23157"
+       id="text1309"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3100"
+         x="209.68927"
+         y="597.23157">Next</tspan></text>
+  </g>
+</svg>

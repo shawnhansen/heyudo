@@ -1,0 +1,20 @@
+xml.instruct! :xml, :version=>"1.0" 
+xml.rss(:version=>"2.0"){
+  xml.channel{
+    xml.title("Heyudo - #{@query}")
+    xml.link("http://www.heyudo.com")
+    xml.description("If you have something you need done, whether it's a job or service, post it here, and the people who can help you will bid against each other for your buisiness. Post a job, get the bids!")
+    xml.language("yourLanguage('en-us')")
+    for post in @posts
+      xml.item do
+      if post.end_date >= Time.now.to_date
+        xml.title(post.title + " Ending: " + post.end_date.to_s)
+        xml.description(post.body)
+        # rfc822
+        xml.pubDate(post.date_posted.rfc2822)
+      xml.link("http://www.heyudo.com/post/show/" + post.id.to_s)
+      end
+      end
+    end
+  }
+}

@@ -1,0 +1,25 @@
+<div id="browse">
+<h2>Browse by category</h2>
+<ul>
+<li><%= link_to "Automobile Service", :controller => 'post', :action => 'browse_results', :category => "automobile"%></li>
+<li><%= link_to "Appliance Service", :controller => 'post', :action => 'browse_results', :category => "appliance"%></li>
+<li><%= link_to "Business Services", :controller => 'post', :action => 'browse_results', :category => "business"%></li>
+<li><%= link_to "Catering", :controller => 'post', :action => 'browse_results', :category => "catering"%></li>
+<li><%= link_to "Cleaning Services", :controller => 'post', :action => 'browse_results', :category => "cleaning"%></li>
+<li><%= link_to "Computer Service", :controller => 'post', :action => 'browse_results', :category => "computer"%></li>
+<li><%= link_to "Design Services (Print, Web, etc.)", :controller => 'post', :action => 'browse_results', :category => "design"%></li>
+<li><%= link_to "Electrical Service", :controller => 'post', :action => 'browse_results', :category => "electrical"%></li>
+<li><%= link_to "Entertainment Services (Dj's, Performers, Event planning)", :controller => 'post', :action => 'browse_results', :category => "entertainment"%></li>
+<li><%= link_to "Financial Services", :controller => 'post', :action => 'browse_results', :category => "financial"%></li>
+<li><%= link_to "Home Improvement", :controller => 'post', :action => 'browse_results', :category => "home improvement"%></li>
+<li><%= link_to "Large Construction", :controller => 'post', :action => 'browse_results', :category => "construction"%></li>
+<li><%= link_to "Landscaping", :controller => 'post', :action => 'browse_results', :category => "landscaping"%></li>
+<li><%= link_to "Legal Services", :controller => 'post', :action => 'browse_results', :category => "legal"%></li>
+<li><%= link_to "Other Services", :controller => 'post', :action => 'browse_results', :category => "other"%></li>
+<li><%= link_to "Personal Services (Personal Trainers, Dieticians, etc.)", :controller => 'post', :action => 'browse_results', :category => "personal"%></li>
+<li><%= link_to "Photography", :controller => 'post', :action => 'browse_results', :category => "photography"%></li>
+<li><%= link_to "Plumbing", :controller => 'post', :action => 'browse_results', :category => "plumbing"%></li>
+<li><%= link_to "Transportation Services", :controller => 'post', :action => 'browse_results', :category => "transportation"%></li>
+</ul>
+
+</div>

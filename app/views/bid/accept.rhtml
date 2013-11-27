@@ -1,0 +1,18 @@
+<div id="bidAccept">
+<h4>You have won "<%=h @post_accepting.title %>"</h4>
+<h5>Posted by: <%= link_to @post_accepting.user.login, :controller => 'account', :action => 'show', :id => @post_accepting.user.id %></h5>
+<ul>
+<% if @post_accepting.rate == "Hourly rate"%>
+<li>Winning bid: <b>$<%=h @post_accepting.winning_bid %>/hr</b></li>
+<% else %>
+<li>Winning bid: <b>$<%=h @post_accepting.winning_bid %></b></li>
+<% end %>
+<li>Amount due: <b>$2.99</b></li>
+<li>Beta Discount: <b>-$2.99</b></li>
+<li>Total: <b>FREE!</b></li>
+</ul>
+<div id="bidAcceptButtons">
+<%= link_to image_tag("get_info_button_round.png", :alt => "Get user info"), :action => 'payment_complete', :post_id => @post_accepting.id%>
+<%= link_to_remote("#{image_tag('cancel_button.png', :alt => 'Cancel')}", :update => 'acceptBox' , :complete => "new Effect.Fade('acceptBox')", :url => { :controller => 'bid', :action => 'accept'}) %>
+</div>
+</div>

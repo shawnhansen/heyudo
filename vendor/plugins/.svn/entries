@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="198"
+   name=""
+   committed-date="2006-09-21T04:01:32.949535Z"
+   url="http://svn.heyudo.com/heyudosvn/vendor/plugins"
+   last-author="smh"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   name="exception_notification"
+   kind="dir"/>
+<entry
+   name="file-column"
+   kind="dir"/>
+</wc-entries>

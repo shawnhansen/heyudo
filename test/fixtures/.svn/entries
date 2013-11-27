@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="223"
+   name=""
+   committed-date="2006-10-15T18:10:37.345946Z"
+   url="http://svn.heyudo.com/heyudosvn/test/fixtures"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   name="notifier"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="bids.yml"
+   text-time="2007-03-02T16:40:47.506318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.427318Z"/>
+<entry
+   committed-rev="1"
+   name="users.yml"
+   text-time="2007-03-02T16:40:47.513318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="c5040700825d1e613cba08ce201e8e52"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.433318Z"/>
+<entry
+   committed-rev="1"
+   name="bills.yml"
+   text-time="2007-03-02T16:40:47.608318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.439318Z"/>
+<entry
+   committed-rev="1"
+   name="feedbacks.yml"
+   text-time="2007-03-02T16:40:47.630318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.446318Z"/>
+<entry
+   committed-rev="1"
+   name="messages.yml"
+   text-time="2007-03-02T16:40:47.660318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.452318Z"/>
+<entry
+   committed-rev="1"
+   name="posts.yml"
+   text-time="2007-03-02T16:40:47.726318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.457318Z"/>
+<entry
+   committed-rev="223"
+   name="videos.yml"
+   text-time="2007-03-02T16:40:47.733318Z"
+   committed-date="2006-10-15T18:10:37.345946Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.463318Z"/>
+<entry
+   committed-rev="1"
+   name="codes.yml"
+   text-time="2007-03-02T16:40:47.754318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.478318Z"/>
+<entry
+   committed-rev="162"
+   name="contacts.yml"
+   text-time="2007-03-02T16:40:47.761318Z"
+   committed-date="2006-08-31T01:29:41.180151Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.491318Z"/>
+<entry
+   committed-rev="124"
+   name="tags.yml"
+   text-time="2007-03-02T16:40:47.806318Z"
+   committed-date="2006-08-17T18:43:56.910950Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:47.498318Z"/>
+</wc-entries>

@@ -1,0 +1,14 @@
+<%@page_title = "Account confirmation"%>
+<div id="accountConfirmation">
+<fieldset>
+<h1>Due to high demand we are bypassing the email confirmation process. Your confirmation 
+code is provided below. Just enter it and click the "Submit" button.</h1>
+<%= start_form_tag ({:action => 'confirmation_submit', :id => @session['user'].id}, :multipart => true) %>
+<%= error_messages_for 'user' %>
+   <p><label for="user_conf_code">Confirmation code: <span id="confCodeDisp"><%=h @user.conf_code%></span></label><br/>
+   <%= text_field "user", "conf_code", :value => "", :size => 30 %><br/></p>
+<%= submit_tag "Submit" %>
+<%= end_form_tag %>
+<%= link_to "Click here", :action => 'confirmation_resend', :user => @session['user'].id%> to have your confirmation code re-sent to your email address.
+</fieldset>
+</div>

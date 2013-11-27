@@ -1,0 +1,32 @@
+<div id="dashTableBox">
+<h3>Inbox (<%= @messages.length %>)</h3>
+    <table cellspacing="0" class="blackBorder">
+      <thead>
+        <tr>
+          <th>From</th>
+          <th>Subject</th>
+          <th>Received</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @zebra = 0 %>
+        <% for message in @messages.reverse do %>
+        <% @zebra = (@zebra + 1) %>
+        <% if @zebra % 2 == 1 %>
+        <tr class="zebraOdd" id="<%= message.id %>">
+        <% else %>
+        <tr id="<%= message.id %>">
+        <% end %>
+          <td><%= link_to message.user.login, :controller => 'account', :action => 'show', :id => message.sender_id %></td>
+          <td><% if message.is_read == 0 %><%= "<b>" %><% end %><%= link_to_remote("#{message.subject}", :update => 'displayMessage' , :complete => "new Effect.Appear('displayMessage')", :url => { :controller => 'message', :action => 'show', :id => message}) %><% if message.is_read == 0 %><%= "</b>" %><% end %></td>
+          <td><%= message.time_sent %></td>
+          <td><%= link_to_remote("#{image_tag('delete_button_inbox.png')}", :update => 'dashboard' , :loading => "new Effect.Puff('#{message.id}')", :url => { :controller => 'message', :action => 'destroy', :id => message }, :confirm => 'Are you sure you want to delete this message permanently?', :post => true) %></td>
+        </tr>
+        <% end %>
+      </tbody>        
+    </table>
+    <p class="infoMessages">Come here to read your messages from other users.</p>
+<div id="displayMessage" style="display:none">
+</div>
+<%= draggable_element("displayMessage") %>
+</div>

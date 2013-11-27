@@ -1,0 +1,27 @@
+<h1>Listing bills</h1>
+
+<table>
+  <tr>
+  <% for column in Bill.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for bill in @bills %>
+  <tr>
+  <% for column in Bill.content_columns %>
+    <td><%=h bill.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => bill %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => bill %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => bill }, :confirm => 'Are you sure?', :post => true %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @bill_pages.current.previous } if @bill_pages.current.previous %>
+<%= link_to 'Next page', { :page => @bill_pages.current.next } if @bill_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New bill', :action => 'new' %>

@@ -1,0 +1,33 @@
+<div id="search_hits">
+<h1>Browsing "<%=@category%>"</h1>
+<table cellspacing="0" class="blackBorder">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Location</th>
+          <th>Ending</th>
+        </tr>
+      </thead>
+      <tbody>
+<% @zebra = 0 %>
+<% for post in @browse_results do %>
+    <% @zebra = (@zebra + 1) %>
+    <% if @zebra % 2 == 1 %>
+  <tr class="zebraOdd">
+  <% else %>
+  <tr>
+  <% end %>
+  <td><%= link_to post.title, :action => 'show', :id => post %></td>
+  <td><%= "#{post.body}" [0,70] %>...</td>
+  <td><span id="city"><%= link_to post.city, :controller => 'post', :action => 'show_search', :query => post.city %>, <%= link_to post.state, :controller => 'post', :action => 'show_search', :query => post.state %></span></td>
+  <td><span id="ending">Ending: <%=h post.end_date %></span></td>
+  </tr>
+    <% end %>
+</tbody>        
+    </table>
+<p class="resultsPagLinks">
+<%= link_to '<< Previous 20', { :page => @browse_results_pages.current.previous, :category => @category } if @browse_results_pages.current.previous %>
+<%= link_to 'Next 20 >>', { :page => @browse_results_pages.current.next, :category => @category } if @browse_results_pages.current.next %> 
+</p>
+</div>

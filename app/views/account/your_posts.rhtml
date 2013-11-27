@@ -1,0 +1,34 @@
+<%= link_to 'Dashboard', :controller => 'account', :action => 'welcome' %> | <%= link_to "Your posts", :controller => 'account', :action => 'your_posts' %> | <%= link_to "Your bids", :controller => 'account', :action => 'your_bids' %> | <%= link_to "Create a new post", :controller => 'post', :action => 'new' %>
+<div id="contentLeft">
+  <h3>Your Active Posts:</h3>
+  <ul>
+    <% for post in @posts do %>
+    <li><%= link_to post.title, :controller => 'post', :action => 'show', :id => post %> Most Recent bid: $<%=h post.lowest_bid %> Ending: <%=h post.end_date %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div id="contentCenter">
+  <h3>Posts that need feedback:</h3>
+  <ul>
+    <% for post in @completed_posts do %>
+    <% if post.delete_id == @session['user'].id %>
+    <% else %>
+    <% @winner = User.find(post.winner) %>
+    <li><%= link_to post.title, :controller => 'post', :action => 'show', :id => post %> Ended: <%=h post.end_date %> Winning Bid: $<%=h post.winning_bid %> by <%=h @winner.login %> <%= link_to "Rate this user's performance", :controller => 'account', :action => 'feedback', :post => post.id, :id => @winner.id %> | <%= link_to 'Delete', { :controller => 'post', :action => 'pre_destroy', :id => post.id }, :confirm => 'Are you sure you want to delete this post permanently?', :post => true %></li>
+    <% end %>
+    <% end %>
+  </ul>
+</div>
+
+<div id="contentRight">
+  <h3>Your archived posts:</h3>
+  <ul>
+    <% for post in @archived_posts.reverse do %>
+    <% if post.delete_id == @session['user'].id %>
+    <% else %>
+    <li><%= link_to post.title, :controller => 'post', :action => 'show', :id => post.id %> Winning bid: $<%=h post.winning_bid %> Ended: <%=h post.end_date %> | <%= link_to 'Delete', { :controller => 'post', :action => 'pre_destroy', :id => post.id }, :confirm => 'Are you sure you want to delete this post permanently?', :post => true %></li>
+    <% end %>
+    <% end %>
+  </ul>
+</div>

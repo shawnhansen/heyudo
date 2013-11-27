@@ -1,0 +1,20 @@
+<% @page_title = "Post a job, get the bids!" %>
+<% @page_desc = "Main welcome page for heyudo.com"%>
+<% @meta_keywords = "heyudo,welcome,index,bid,service,services,auction"%>
+<div id="signupLink">
+<%= link_to image_tag("signup_now.png", :alt => "Signup now, free!"), :controller => 'account', :action => 'signup' %>
+</div>
+<div id="mainWelcome">
+<%= link_to image_tag("video_contest_badge.png", :alt => "Find out about our awesome video contest!", :class => "videoContestBadge"), :controller => 'main', :action => 'video_contest' %>
+<div id="hugeText">
+<h2 class="huge">Matching up people who need things done with people who can get things done. Post a job, get the bids!</h2>
+</div>
+<div id="bigButtons">
+<%= link_to image_tag("need_something.png", :alt => "I need things done"), :action => 'need_something' %>
+<%= link_to image_tag("can_get_something.png", :alt => "I get things done"), :action => 'get_something_done' %>
+</div>
+<div id="browseLinkMain">
+<p>-or-</p>
+<%= link_to image_tag("browse_categories.png", :alt => "Browse our categories"), :controller => 'post', :action => 'browse'%>
+</div>
+</div>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2006-08-02T15:35:03.880584Z"
+   url="http://svn.heyudo.com/heyudosvn/index/development/post"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   committed-rev="1"
+   name="_3u.cfs"
+   text-time="2007-03-02T16:41:16.364318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="afc7b28af0a9bf1441095b193a210a79"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:15.775318Z"/>
+<entry
+   committed-rev="1"
+   name="_1o.del"
+   text-time="2007-03-02T16:41:16.371318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="d842d4b41a1a92f9a51e17a79e6c3a2d"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:15.781318Z"/>
+<entry
+   committed-rev="1"
+   name="segments"
+   text-time="2007-03-02T16:41:16.700318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="760d8b1c9c01b15d5f915221994a45af"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:16.159318Z"/>
+<entry
+   committed-rev="1"
+   name="_1o.cfs"
+   text-time="2007-03-02T16:41:16.857318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="15a780b3d01064d0203dd19397ad5cf5"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:16.217318Z"/>
+</wc-entries>

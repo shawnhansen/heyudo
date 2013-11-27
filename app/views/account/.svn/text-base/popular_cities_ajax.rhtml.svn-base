@@ -1,0 +1,25 @@
+<h3>Popular cities</h3>
+    <table cellspacing="0" class="blackBorder">
+      <thead>
+        <tr>
+          <th>City</th>
+          <th>Number of Posts</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @zebra = 0 %>
+        <% @zebra = (@zebra + 1) %>
+        <% if @zebra % 2 == 1 %>
+        <tr class="zebraOdd">
+        <% else %>
+        <tr>
+        <% end %>
+          <td><%= link_to "Appleton", :controller => 'post', :action => 'show_search', :query => "appleton"%></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td><%= link_to "Denver", :controller => 'post', :action => 'show_search', :query => "denver"%></td>
+          <td>153</td>
+        </tr>
+      </tbody>
+    </table>

@@ -1,0 +1,131 @@
+<% @page_title = @session['user'].login + "'s" " dashboard" %>
+<% @page_desc = "Main navigation page for all users. Gives access to posts messages, etc."%>
+<div id="accountWelcome">
+<div id="dashInfo">
+    <ul>
+     <% if @num_messages.length > 0 %>
+     <li><%=h @num_messages.length %> unread message(s) in your <%= link_to_remote("inbox", :update => 'dashboard' ,:url => { :action => :inbox_ajax }) %></li>
+     <% else %>
+     <% end %>
+     <% if @num_pending_posts.length > 0 %>
+     <li><%=h @num_pending_posts.length %> post(s) to pick a winner for in <%= link_to_remote("your posts", :update => 'dashboard' ,:url => { :action => :your_posts_ajax }) %></li>
+     <% else %>
+     <% end %>
+     <% if @num_feedback_posts.length > 0 %>
+     <li><%=h @num_feedback_posts.length %> that need feedback in <%= link_to_remote("your posts", :update => 'dashboard' ,:url => { :action => :your_posts_ajax }) %></li>
+     <% else %>
+     <% end %>
+     <% if @num_won_posts.length > 0 %>
+     <li><%=h @num_won_posts.length %> post(s) you've just won in <%= link_to_remote("your bids", :update => 'dashboard' ,:url => { :action => :your_bids_ajax }) %></li>
+     <% else %>
+     <% end %>
+    </ul>
+    </div>
+<div id="dashboardNav">
+          <% if @num_messages.length > 0 %>
+            <%= link_to_remote("#{image_tag('inbox_button_bing.png', :alt => 'Inbox')}", 
+                    :update => 'dashboard' ,
+                    :url => { :action => :inbox_ajax }) %>
+          <% else %>
+            <%= link_to_remote("#{image_tag('inbox_button.png', :alt => 'Inbox')}", 
+                    :update => 'dashboard' ,
+                    :url => { :action => :inbox_ajax }) %>
+          <% end %>
+          <% if @num_pending_posts.length > 0 %>
+           <%= link_to_remote("#{image_tag('your_posts_button_bing.png', :alt => 'Your posts')}", 
+                    :update => 'dashboard' , 
+                    :url => { :action => :your_posts_ajax }) %>
+          <% elsif @num_feedback_posts.length > 0 %>
+           <%= link_to_remote("#{image_tag('your_posts_button_bing.png', :alt => 'Your posts')}", 
+                    :update => 'dashboard' , 
+                    :url => { :action => :your_posts_ajax }) %>
+          <% else %>
+           <%= link_to_remote("#{image_tag('your_posts_button.png', :alt => 'Your posts')}", 
+                    :update => 'dashboard' , 
+                    :url => { :action => :your_posts_ajax }) %>
+          <% end %>
+          <% if @num_won_posts.length > 0 %>
+           <%= link_to_remote("#{image_tag('your_bids_button_bing.png', :alt => 'Your bids')}", 
+                    :update => 'dashboard' , 
+                    :url => { :action => :your_bids_ajax }) %>
+          <% else %>
+           <%= link_to_remote("#{image_tag('your_bids_button.png', :alt => 'Your bids')}", 
+                    :update => 'dashboard' , 
+                    :url => { :action => :your_bids_ajax }) %>
+          <% end %>
+          <!--[if lte IE 7]>
+          <%= link_to_remote("#{image_tag('create_a_post_button.png', :alt => 'Create a post')}", 
+          :update => 'dashboard' ,
+          :url => { :controller => 'post', 
+          :action => 'new_IE', 
+          :id => @session['user']}) %>
+          <![endif]-->
+          <!--[if !IE]><!-->
+          <%= link_to_remote("#{image_tag('create_a_post_button.png', :alt => 'Create a post')}", 
+          :update => 'postNewBox' , 
+          :complete => "new Effect.Appear('postNewBox')", 
+          :url => { :controller => 'post', 
+          :action => 'new', 
+          :id => @session['user']}) %>
+          <!--<![endif]-->
+</div>
+  <div id="accountWelcomeAd">
+     <script type="text/javascript"><!--
+        google_ad_client = "pub-4000454371917145";
+        google_ad_width = 160;
+        google_ad_height = 600;
+        google_ad_format = "160x600_as";
+        google_ad_type = "text_image";
+        google_ad_channel ="";
+        google_color_border = "52ADDA";
+        google_color_bg = "FFFFFF";
+        google_color_link = "FFFFFF";
+        google_color_text = "FFFFFF";
+        google_color_url = "F0F0FF";
+//--></script>
+     <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+     </script>
+  </div>
+  
+  <div id="postNewBox" style="display: none;">
+  </div>
+  <%= draggable_element("postNewBox") %>
+  
+  <div id="dashboard">
+   <div id="dashboardNews">
+       <h1>Heyudo News</h1>
+       <h2>Video Contest Begins! - 10/15/06</h2>
+       <p>We are oficially accepting entries for the <%= link_to "Heyudo video contest", :controller => "main", :action => "video_contest" %>. You can read all of the rules and submit your entry on the <%= link_to "contest page", :controller => "main", :action => "video_contest" %>.</p>
+       <h2>Heyudo Launches! - 09/25/06</h2>
+       <p>Welcome to Heyudo! Feel free to start making posts, search for jobs, or just browse 
+       around. We've put a lot of effort into making Heyudo as easy to use as possible. But, 
+       if you have any questions or concerns feel free to use the "Contact Us" link at the 
+       top of any page. Just fill out the form and we will do our best to help you out.</p>
+       <p>Thanks,<br />
+       Jason and Shawn</p>
+   </div>
+  </div>
+<% if @user.opened_settings == 0 %>
+<div id="settingsPointer">
+<p class="settingsPointerCloseButton"><%= link_to_remote("Close [X]", :complete => "new Effect.Fade('settingsPointer')", :url => {}) %></p>
+<p>Make sure to visit the "change you info/settings" link. This is where you can do things like add 
+or change your profile picture and tell everyone a little about yourself. This information is particularly 
+important if you ever plan on bidding because posters might want to view your profile to find out 
+more about you or your company.</p>
+</div>
+<% end %>
+<% if @session[:first_login] == 1 %>
+<% @session[:first_login] = nil %>
+<div id="firstWelcome">
+<h1>Thanks for signing up!</h1>
+<p>After you close this message you'll be at what we call your "dashboard". This is the place you'll 
+probably see most often on Heyudo. It acts as a central hub to access all of the information important 
+to you. You'll be able to access your inbox, your posts, and your bids here. Feel free to click around 
+and get familiar with it. Don't forget about your "navigation bar" too, it'll always be near the 
+top of the page, giving you easy access to the features of the site. Enjoy!</p>
+<p>-- The Heyudo Team</p>
+<p class="firstWelcomeClose"><%= link_to_remote("Close this window", :complete => "new Element.remove('firstWelcome')", :url => {}) %></p>
+</div>
+<% end %>
+</div>

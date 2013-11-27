@@ -1,0 +1,21 @@
+<% @nav_bar_user = User.find(@session['user'].id) %>
+<h5>Welcome <%=h @session['user'].login %></h5>
+<div id="navThumb">
+<% if @nav_bar_user.pic == nil %>
+<%= image_tag ("missing_nav_pic.png", :alt => "Your picture could be here!")%>
+<% else %>
+<%= image_tag url_for_file_column ("nav_bar_user", "pic"), :alt => "Hey good lookin'" %>
+<% end %>
+</div>
+<p>
+<%= link_to image_tag("user_nav_dashboard_button.png", :alt => "Dashboard", :id=>"dash"), :controller => 'account', :action => 'welcome' %>
+<%= link_to image_tag("user_nav_browse_button.png", :alt => "Browse"), :controller => 'post', :action=> 'browse' %>
+<%= link_to image_tag("user_nav_search_button.png", :alt => "Search"), :controller => 'post', :action => 'search' %>
+<%= link_to image_tag("user_nav_logout_button.png", :alt => "Logout"), :controller => 'account', :action=>"logout"%>
+</p>
+<div id="userNavBarSettingsLinks">
+<p>
+<%= link_to_remote("Change your info/settings", :update => 'changeSettingsBox' , :complete => "new Effect.Appear('changeSettingsBox')", :complete => "new Effect.Fade('settingsPointer')", :url => { :controller => 'account', :action => 'settings', :id => @session['user']}) %>
+ | <%= link_to "View your profile", :controller => 'account', :action => 'show', :id => @session['user'].id %>
+</p>
+</div>

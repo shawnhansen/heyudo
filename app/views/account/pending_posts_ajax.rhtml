@@ -1,0 +1,28 @@
+<h3>Review bids:</h3>
+    <table cellspacing="0" class="blackBorder">
+      <thead>
+        <tr>
+          <th>Post Title</th>
+          <th></th>
+          <th>Ended On</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @zebra = 0 %>
+      <% for post in @pending_posts do %>
+      <% @zebra = (@zebra + 1) %>
+        <% if @zebra % 2 == 1 %>
+        <tr class="zebraOdd" id="<%= post.id %>">
+        <% else %>
+        <tr id="<%= post.id %>">
+        <% end %>
+          <td><b><%= link_to post.title, :controller => 'post', :action => 'show', :id => post %></b></td>
+          <td><%= link_to "Review bids", :controller => 'post', :action => 'accept', :post => post %></td>
+          <td><%=h post.end_date %></td>
+          <td><%= link_to_remote("#{image_tag('delete_button_inbox.png', :alt => 'Delete')}", :loading => "new Effect.Puff('#{post.id}')", :url => { :controller => 'post', :action => 'pre_destroy', :id => post.id }, :confirm => 'Are you sure you want to delete this message permanently?', :post => true) %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+    <p class="infoMessages">Only 1 step left for these posts. Just click on "Review bids" and pick 
+                                a winner to get your task done at the price they bid!</p>

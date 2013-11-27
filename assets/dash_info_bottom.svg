@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   inkscape:export-filename="/home/jasbur/heyudo/svn/public/images/dash_info_bottom.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docbase="/home/jasbur/heyudo/svn/assets"
+   sodipodi:docname="dash_info_bottom.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="112.06544"
+     inkscape:cy="660"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="874"
+     inkscape:window-height="589"
+     inkscape:window-x="0"
+     inkscape:window-y="25" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4808"
+       transform="matrix(-1,1.943094e-18,-1.943094e-18,-1,406.5,744.2372)">
+      <rect
+         y="366.86218"
+         x="-97"
+         height="10.5"
+         width="600.5"
+         id="rect3057"
+         style="fill:#fffab1;fill-opacity:1;stroke:none;stroke-opacity:1" />
+      <path
+         id="rect2182"
+         d="M -87.15625,367.375 C -92.393809,367.70487 -96.5,372.05141 -96.5,377.375 L 503.5,377.375 C 503.5,371.835 499.04,367.375 493.5,367.375 L -86.5,367.375 C -86.716406,367.375 -86.943341,367.36159 -87.15625,367.375 z "
+         style="fill:#ff8d00;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2006-08-02T15:35:03.880584Z"
+   url="http://svn.heyudo.com/heyudosvn/lib"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   name="tasks"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="search_system.rb"
+   text-time="2007-03-02T16:41:15.570318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="bb95be69bd28247a8f7467a58e52d2dc"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:15.556318Z"/>
+<entry
+   committed-rev="1"
+   name="login_system.rb"
+   text-time="2007-03-02T16:41:15.578318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="2d32f85e56f29ed10ae90abf4a5b7075"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:15.562318Z"/>
+</wc-entries>

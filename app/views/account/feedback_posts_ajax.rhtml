@@ -1,0 +1,39 @@
+<h3>Posts that need feedback:</h3>
+  <table cellspacing="0" class="blackBorder">
+    <thead>
+      <tr>
+        <th style="width:200px">Post Title</th>
+        <th>Ended On</th>
+        <th>Winning Bid</th>
+        <th>Winning Bidder</th>
+        <th>Rate User</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @zebra = 0 %>
+    <% for post in @completed_posts do %>
+    <% if post.delete_id == @session['user'].id %>
+    <% else %>
+    <% @winner = User.find(post.winner) %>
+    <% @zebra = (@zebra + 1) %>
+        <% if @zebra % 2 == 1 %>
+        <tr class="zebraOdd" id="<%= post.id %>">
+        <% else %>
+        <tr id="<%= post.id %>">
+        <% end %>
+        <td><b><%= link_to post.title, :controller => 'post', :action => 'show', :id => post %></b></td>
+        <td><%=h post.end_date %></td>
+        <td>$ <%=h post.winning_bid %></td>
+        <td><%= link_to @winner.login, :controller => 'account', :action => 'show', :id => @winner.id %></td>
+        <td class="ratePerformanceLink"><%= link_to_remote("Give Feedback", :update => 'feedbackBox' , :complete => "new Effect.Appear('feedbackBox')", :url => { :controller => 'feedback', :action => 'give_feedback', :post => post.id, :id => @winner.id}) %></td>
+        <td><%= link_to_remote("#{image_tag('delete_button_inbox.png', :alt => 'Delete')}", :loading => "new Effect.Puff('#{post.id}')", :url => { :controller => 'post', :action => 'pre_destroy', :id => post.id }, :confirm => 'Are you sure you want to delete this message permanently?', :post => true) %></td>
+      </tr>
+    <% end %>
+    <% end %>
+    </tbody>
+  </table>
+  <p class="infoMessages">Be a nice customer!  Leave feedback for the bidder(s) that did work 
+    for you here.</p>
+  <div id="feedbackBox" style="display:none">
+  </div>
+  <%= draggable_element("feedbackBox") %>

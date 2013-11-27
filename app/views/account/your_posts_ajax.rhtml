@@ -1,0 +1,56 @@
+<div id="yourPostsNav">
+    <%= link_to_remote("#{image_tag('active_posts_button.png', :alt => 'Active posts')}", 
+                            :update => 'dashTableBox', 
+                            :url => { :action => :active_posts_ajax }) %> 
+ <% if @pending_posts.length > 0 %>
+    <%= link_to_remote("#{image_tag('pick_a_winner_button_bing.png', :alt => 'Pick a winner')}", 
+                            :update => 'dashTableBox', 
+                            :url => { :action => :pending_posts_ajax }) %>
+ <% else %>
+    <%= link_to_remote("#{image_tag('pick_a_winner_button.png', :alt => 'Pick a winner')}", 
+                            :update => 'dashTableBox', 
+                            :url => { :action => :pending_posts_ajax }) %>
+ <% end %> 
+ <% if @completed_posts.length > 0 %>
+    <%= link_to_remote("#{image_tag('posts_that_need_feedback_button_bing.png', :alt => 'Posts that need feedback')}", 
+                            :update => 'dashTableBox', 
+                            :url => { :action => :feedback_posts_ajax }) %>
+ <% else %>
+    <%= link_to_remote("#{image_tag('posts_that_need_feedback_button.png', :alt => 'Posts that need feedback')}", 
+                            :update => 'dashTableBox', 
+                            :url => { :action => :feedback_posts_ajax }) %>
+ <% end %> 
+    <%= link_to_remote("#{image_tag('archived_posts_button.png', :alt => 'Archived posts')}", 
+                            :update => 'dashTableBox', 
+                            :url => { :action => :archived_posts_ajax }) %>
+</div>
+    
+    <div id="dashTableBox">
+      <h3>Your Active Posts:</h3>
+      <table cellspacing="0" class="blackBorder">
+        <thead>
+          <tr>
+            <th>Post Title</th>
+            <th>Latest Bid</th>
+            <th>Post Ending</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @zebra = 0 %>
+          <% for post in @active_posts do %>
+          <% @zebra = (@zebra + 1) %>
+          <% if @zebra % 2 == 1 %>
+          <tr class="zebraOdd">
+          <% else %>
+          <tr>
+          <% end %>
+            <td><b><%= link_to post.title, :controller => 'post', :action => 'show', :id => post %></b></td>
+            <td>$ <%=h post.lowest_bid %></td>
+            <td><%=h post.end_date %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <p class="infoMessages">We'll keep all of your active posts here. It's a great place to keep 
+                                track of your important stuff on heyudo.</p>
+    </div>

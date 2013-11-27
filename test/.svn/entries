@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="223"
+   name=""
+   committed-date="2006-10-15T18:10:37.345946Z"
+   url="http://svn.heyudo.com/heyudosvn/test"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   name="unit"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="test_helper.rb"
+   text-time="2007-03-02T16:40:48.039318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="fc4d849e28f089141debb18b22058277"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:46.135318Z"/>
+<entry
+   name="functional"
+   kind="dir"/>
+<entry
+   name="integration"
+   kind="dir"/>
+<entry
+   name="fixtures"
+   kind="dir"/>
+<entry
+   name="mocks"
+   kind="dir"/>
+</wc-entries>

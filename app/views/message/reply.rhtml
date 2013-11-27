@@ -1,0 +1,16 @@
+<% if @post.end_date < Time.now.to_date %>
+<h4>Sorry, messages cannot be sent to users anout an expired post</h4>
+<% else %>
+<h4>Send a message to <%=h @message.user.login %></h4>
+<h4>Re:"<%=h @message.subject %>"</h4>
+
+
+<%= start_form_tag ({:action => 'sent_reply', :reply => @message.id}, :multipart => true) %>
+<%= error_messages_for 'message' %>
+<p><label for="message_body"></label><br/>
+<%= text_area 'message', 'body', :value => '-------------Original message------------- ' + "#{@message.body}"  %></p>
+<%= image_submit_tag "message_send_button.png", :alt => "Send" %>
+<%= link_to_remote("#{image_tag('cancel_button.png', :alt => 'Cancel')}", :update => 'displayMessage' , :complete => "new Effect.Fade('displayMessage')", :url => { :controller => 'message', :action => 'reply', :message => @message.id, :post => @message.post.id}) %>
+<%= end_form_tag %>
+
+<% end %>

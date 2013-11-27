@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="198"
+   name=""
+   committed-date="2006-09-21T04:01:32.949535Z"
+   url="http://svn.heyudo.com/heyudosvn/vendor/plugins/exception_notification/lib"
+   last-author="smh"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   committed-rev="198"
+   name="exception_notifier.rb"
+   text-time="2007-03-02T16:40:59.097318Z"
+   committed-date="2006-09-21T04:01:32.949535Z"
+   checksum="24c21cd56a7ce24476108d7610890e00"
+   last-author="smh"
+   kind="file"
+   prop-time="2007-03-02T16:40:58.072318Z"/>
+<entry
+   committed-rev="198"
+   name="exception_notifiable.rb"
+   text-time="2007-03-02T16:40:59.104318Z"
+   committed-date="2006-09-21T04:01:32.949535Z"
+   checksum="33d32fbaeb5f7eb2d1297a05a58f4fd1"
+   last-author="smh"
+   kind="file"
+   prop-time="2007-03-02T16:40:58.079318Z"/>
+<entry
+   committed-rev="198"
+   name="exception_notifier_helper.rb"
+   text-time="2007-03-02T16:40:59.129318Z"
+   committed-date="2006-09-21T04:01:32.949535Z"
+   checksum="8d151fedda4e66a6393f200a4a5e24f2"
+   last-author="smh"
+   kind="file"
+   prop-time="2007-03-02T16:40:59.065318Z"/>
+</wc-entries>

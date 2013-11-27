@@ -1,0 +1,14 @@
+<div id="feedbackGive">
+<h3>Rate <%=h @user.login %>'s performance</h3>
+<h4>for service on "<%=h @post.title %>"</h4>
+
+<%= start_form_tag ({:controller => 'feedback', :action => 'sent', :user => @user.id, :post => @post.id}, :multipart => true) %>
+<p><label for="feedback_comment">Comment:</label><br/>
+<%= text_field "feedback", "comment", :size => 50 %></p>
+<p><label for="feedback_rating"></label>
+<%= options = [["Select Rating", ""]] + Feedback::UP_DOWN
+select("feedback", "rated", options) %></p>
+<%= image_submit_tag "message_send_button.png" %>
+<%= link_to_remote("#{image_tag('cancel_button.png')}", :update => 'feedbackBox' , :complete => "new Effect.Fade('feedbackBox')", :url => { :controller => 'feedback', :action => 'give_feedback', :receiver => @post.user.id, :post => @post.id}) %>
+<%= end_form_tag %>
+</div>

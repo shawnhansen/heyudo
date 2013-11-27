@@ -1,0 +1,46 @@
+<% @page_title = "Video Contest"%>
+<div id="videoContest">
+<h1>Heyudo Video Contest</h1>
+<%= image_tag "video_contest_main.png", :class => "videoContestMainImage"%>
+<h2 class="videoContestLogoDownload"><%= link_to "Download the Heyudo logo pack", "/HeyudoLogoPack.zip" %></h2>
+<p class="videoContestClick"><%= link_to_remote ("#{image_tag('video_contest_click.png')}", :update => 'videoContestSignup', 
+                                                                                            :complete => visual_effect(:blind_down, 'videoContestSignup'), 
+                                                                                            :url => { :action => 'video_signup'}) %></p>
+<div id="videoContestSignup">
+</div>
+<h2>What's this all about?</h2>
+<p>Starting October 15th 2006 you have the chance to win 20% of one month 
+of Heyudo's revenue! Here's the deal, just create a video ad for Heyudo, upload 
+it to <%= link_to "YouTube.com", "http://www.youtube.com" %>, and let the people 
+decide. Your video should be no more than 60 seconds in length, must convey some 
+sense of the function of the site (Posting things you need done in the real world), 
+contain the Heyudo logo (this will be provided to you), and cannot contain any 
+copy written material.</p><br/>
+<p>All entries will be ranked based on how many votes they receive and the 
+average rating given. At the end of the contest (December 15th 2006) the top ten 
+entries will be judged and a winner will be picked and notified by December 31st 
+2006.</p><br/>
+<p>The winner will be awarded 20% of all net income for Heyudo during the month of 
+January 2007 or $100, whichever is greater. 
+So be creative and make sure to get those votes!</p>
+<h2>Official Rules</h2>
+<ul>
+<li>No copywritten material (music, footage, etc.)</li>
+<li>Video can be no longer than 60 seconds in length</li>
+<li>Only links to videos hosted on <%= link_to "YouTube.com", "http://www.youtube.com"%> 
+    will be accepted</li>
+<li>Ranking will be determined by taking the number of votes your video receives multiplied 
+    by the average rating (1-10), half stars are factored.</li>
+<li>At the end of the submition period the top ten videos (based on the ranking outlined 
+    above) will be judged by the maintainers of Heyudo.com</li>
+<li>Submissions will be accepted from October 15th 2006 through November 15th 2006</li>
+<li>You must be a registered user of Heyudo.com to submit an entry</li>
+<li>The winning contestant will be entitled to 20% of the total net income generated 
+    by Heyudo.com in the month of January 2007 (and only this month)</li>
+<li>The winning ad will be featured on the front page of Heyudo.com</li>
+<li>Digital Duckies, LLC. will possess all rights and ownership to the winning entry 
+    for use, redistribution, rebroadcast, or any other purpose</li>
+<li>The winner is not actually entitled to any part of Digital Duckies, LLC. or Heyudo.com</li>
+</ul>
+<%= link_to image_tag("signup_now_blue_back.png", :alt => "Signup now!", :class => "videoContestSignupLink"), :controller => 'account', :action => 'signup' %>
+</div>

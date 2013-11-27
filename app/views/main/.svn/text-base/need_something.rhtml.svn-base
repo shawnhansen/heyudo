@@ -1,0 +1,30 @@
+<% @page_title = "I need something done" %>
+<% @page_desc = "Tutorial on using heyudo.com to find people to complete tasks for you"%>
+<div id="needSomething">
+<h1>Need something done?</h1>
+<div id="needSomethingBody">
+<%= image_tag ("tut_mascot.png", :alt => "Hello! I'm the mascot.", :class => "tutMascotNeedSomething")%>
+<div id="needSomethingParagraph">
+<p>Well you're at the right place. Heyudo is the one place to go when you need real things done. 
+It's simple, just make a "post" for something you need done. It could be a lawn that needs to be mowed, a 
+deck that needs to be built, or a Website that needs to be created.</p>
+<p>Tell us the most you're willing to pay 
+to have it done, and when you want to have the "bidding" done by. Then the people who can get the 
+job done for you will compete for your business. No more phone books, no more phone tag, no more 
+hassles.</p>
+</div>
+<div id="needSomethingTutorial">
+<h2>How does it work?</h2>
+<p>First, just login using the login box on the top of the page.</p>
+<%= image_tag ("tut_login_box.png", :alt => "Login box image") %>
+<p>Then click on the "create a post" button on the first page you see after you login.</p>
+<%= image_tag ("tut_create_post.png", :alt => "Create a post image") %>
+<p>Then just fill out the form, click the button, and wait for the offers to roll in!</p>
+<%= image_tag ("tut_create_post_form", :alt => "Create a post image")%>
+<p>Viola! That's it! Now you just sit back, relax, and let them fight over who will give you the 
+best deal. Don't forget, if you have a special skill, and feel like becoming insanely wealthy
+you can also search for posts from your dashboard (that's the first page you see when you log in).</p>
+<span id="tutSignupLink"><%= link_to image_tag("signup_now_white_back.png", :alt => "Signup now!"), :controller => 'account', :action => 'signup' %></span>
+</div>
+</div>
+</div>

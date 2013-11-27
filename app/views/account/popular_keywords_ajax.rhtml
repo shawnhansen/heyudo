@@ -1,0 +1,25 @@
+<h3>Popular keywords</h3>
+    <table cellspacing="0" class="blackBorder">
+      <thead>
+        <tr>
+          <th>Keyword</th>
+          <th>Number of Posts</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @zebra = 0 %>
+        <% @zebra = (@zebra + 1) %>
+        <% if @zebra % 2 == 1 %>
+        <tr class="zebraOdd">
+        <% else %>
+        <tr>
+        <% end %>
+          <td><%= link_to "Test", :controller => 'post', :action => 'show_search', :query => "test"%></td>
+          <td>123</td>
+        </tr>
+        <tr>
+          <td><%= link_to "John", :controller => 'post', :action => 'show_search', :query => "john"%></td>
+          <td>53</td>
+        </tr>
+      </tbody>
+    </table>

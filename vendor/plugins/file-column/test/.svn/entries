@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2006-08-02T15:35:03.880584Z"
+   url="http://svn.heyudo.com/heyudosvn/vendor/plugins/file-column/test"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   committed-rev="1"
+   name="connection.rb"
+   text-time="2007-03-02T16:41:02.008318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="cb71c91d0e3af62e8099425e9cb3b95e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:59.554318Z"/>
+<entry
+   committed-rev="1"
+   name="abstract_unit.rb"
+   text-time="2007-03-02T16:41:02.017318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="4c589a4a276b07aeab54838fc9b2a283"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:59.561318Z"/>
+<entry
+   name="fixtures"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="magick_test.rb"
+   text-time="2007-03-02T16:41:02.025318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="7724f6dfe21a1be396a7ea506e1dc4ef"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:01.877318Z"/>
+<entry
+   committed-rev="1"
+   name="file_column_test.rb"
+   text-time="2007-03-02T16:41:02.035318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="c4b7653adb80ffb56fba54c0ff2bcfbe"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:01.974318Z"/>
+<entry
+   name="public"
+   kind="dir"/>
+</wc-entries>

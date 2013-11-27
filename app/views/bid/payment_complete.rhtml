@@ -1,0 +1,17 @@
+<% @page_title = "Contact info for " + @user.login %>
+<div id="paymentShow">
+<% if @post.winner == @session['user'].id %>
+<h2>Contact information for "<%= link_to @post.title, :controller => 'post', :action => 'show', :id => @post.id %>"</h2>
+<div id="paymentShowContent">
+<p>A copy of this information has been sent to you email address (<%=h @session['user'].email_address%> )</p>
+<ul>
+<li>Poster: <b><%=h @user.login %></b></li>
+<li>Email address: <b><%= link_to @user.email_address, "mailto:#{@user.email_address}" %></b></li>
+<li>First name: <b><%=h @user.first_name %></b></li>
+<li>Phone number: <b><%=h number_to_phone(@user.phone_number, {:area_code => true}) %></b></li>
+</ul>
+<% else %>
+<p>Sorry, something went wrong. Please try clicking the link in "Your Bids" again.</p>
+<% end %>
+</div>
+</div>

@@ -1,0 +1,18 @@
+<div id="changeSettings">
+<h3>Change/update your information</h3>
+<%= start_form_tag ({:action => 'settings_save', :id => @user.id}, :multipart => true) %>
+<%= error_messages_for 'user' %>
+<% if @user.pic == nil %>
+<%= image_tag ("missing_user_pic.png", :alt => "You're Picture could be here")%>
+<% else %>
+<%= image_tag url_for_file_column ("user", "pic"), :alt => "Hey good lookin'" %>
+<% end %>
+<p class="changeSettingsBrowse"><label for="user_pic">Change or add your picture:</label><br/>
+<%= file_column_field "user", "pic", :size => 20 %></p>
+   <p><label for="user_user_info">Change/update the information about you or your business:</label><br/>
+   <%= text_area "user", "user_info" %><br/></p>
+   <p><label for="user_site_url">Change/update your website address:</label><br/>
+  http://<%= text_field "user", "site_url", :size => 20 %><br/></p>
+<%= image_submit_tag "update_button.png", :alt => "Update" %> <%= link_to_remote("#{image_tag('cancel_button.png', :alt => 'Cancel')}", :update => 'chnageSettingsBox' , :complete => "new Effect.Fade('changeSettingsBox')", :url => { :action => 'settings', :id => @session['user']}) %>
+<%= end_form_tag %>
+</div>

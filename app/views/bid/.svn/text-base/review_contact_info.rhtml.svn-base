@@ -1,0 +1,12 @@
+<% @page_title = "contact info for " + @user.login%>
+<div id="paymentShow">
+<h2>Contact information for "<%=h @post.title %>"</h2>
+<div id="paymentShowContent">
+<ul>
+<li>Poster: <b><%=h @user.login %></b></li>
+<li>Email address: <b><%= link_to @user.email_address, "mailto:#{@user.email_address}" %></b></li>
+<li>First name: <b><%=h @user.first_name %></b></li>
+<li>Phone number: <b><%=h number_to_phone(@user.phone_number) %></b></li>
+</ul>
+</div>
+</div>

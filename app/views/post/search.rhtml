@@ -1,0 +1,12 @@
+<% @page_title = "Search Posts" %>
+<% @page_desc = "Search active posts"%>
+<div id="liveSearch">
+<h3>Search Heyudo:</h3>
+<%= start_form_tag ({:action => 'show_search'}, :multipart => true, :method => :get) %>
+<%= text_field_tag :query %>
+<%= submit_tag "Search", :class => "submit" %>
+<p>(example: computer repair denver, co OR painter needed, wisconsin)</p>
+<p>This is the best way to find jobs to bid on. Just use plain english to tell us what you're 
+looking for. You can type a description, city, state, catergory, or all of the above in any 
+order.</p>
+</div>

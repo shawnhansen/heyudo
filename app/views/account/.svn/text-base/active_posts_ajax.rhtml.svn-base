@@ -1,0 +1,27 @@
+<h3>Your Active Posts:</h3>
+      <table cellspacing="0" class="blackBorder">
+        <thead>
+          <tr>
+            <th>Post Title</th>
+            <th>Latest Bid</th>
+            <th>Post Ending</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @zebra = 0 %>
+          <% for post in @active_posts do %>
+          <% @zebra = (@zebra + 1) %>
+          <% if @zebra % 2 == 1 %>
+          <tr class="zebraOdd">
+          <% else %>
+          <tr>
+          <% end %>
+            <td><%= link_to post.title, :controller => 'post', :action => 'show', :id => post %></td>
+            <td>$ <%=h post.lowest_bid %></td>
+            <td><%=h post.end_date %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <p class="infoMessages">We'll keep all of your active posts here. It's a great place to keep 
+                                track of your important stuff on heyudo.</p>

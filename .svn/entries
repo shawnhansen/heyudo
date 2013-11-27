@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="224"
+   name=""
+   committed-date="2006-10-15T18:26:11.218627Z"
+   url="http://svn.heyudo.com/heyudosvn"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   name="test"
+   kind="dir"/>
+<entry
+   name="app"
+   kind="dir"/>
+<entry
+   name="log"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="Rakefile"
+   text-time="2007-03-02T16:42:07.498318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="17f2f134da4cd31ea095d5868ca89e86"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:55.975318Z"/>
+<entry
+   committed-rev="1"
+   name=".project"
+   text-time="2007-03-02T16:42:07.506318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="1c9f43e31f6babc874d52ef61394cef3"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:55.980318Z"/>
+<entry
+   committed-rev="1"
+   name="README_LOGIN"
+   text-time="2007-03-02T16:42:07.520318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="d94df1e129f768e0e3bd9ac049fd73ec"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:56.934318Z"/>
+<entry
+   name="db"
+   kind="dir"/>
+<entry
+   name="components"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="README"
+   text-time="2007-03-02T16:42:07.544318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="14388664411f679fb024491691e04894"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:57.484318Z"/>
+<entry
+   name="vendor"
+   kind="dir"/>
+<entry
+   name="tmp"
+   kind="dir"/>
+<entry
+   name="assets"
+   kind="dir"/>
+<entry
+   name="script"
+   kind="dir"/>
+<entry
+   name="doc"
+   kind="dir"/>
+<entry
+   name="config"
+   kind="dir"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   name="index"
+   kind="dir"/>
+<entry
+   name="public"
+   kind="dir"/>
+</wc-entries>

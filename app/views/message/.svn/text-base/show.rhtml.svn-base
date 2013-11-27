@@ -1,0 +1,7 @@
+<div id="messageShowContent">
+    <h4>Subject: "<%=h @message.subject %>"</h4>
+    <h4>Regarding: "<%= link_to @message.post.title, :controller => 'post', :action => 'show', :id => @message.post.id %>"</h4>
+    <h4>From: <%=h @message.user.login %></h4>
+    <p><%=h @message.body %></p>
+  <%= link_to_remote("#{image_tag('reply_button.png', :alt => 'Reply')}", :update => 'displayMessage' , :complete => "new Effect.Appear('displayMessage')", :url => { :controller => 'message', :action => 'reply', :message => @message.id, :post => @message.post.id}) %> <%= link_to_remote("#{image_tag('close_button.png', :alt => 'Close')}", :update => 'displayMessage' , :complete => "new Effect.Fade('displayMessage')", :url => { :controller => 'message', :action => 'show', :message => @message.id, :post => @message.post.id}) %> <%= link_to_remote("#{image_tag('delete_button.png', :alt => 'Delete')}", :update => 'dashboard' , :loading => "new Effect.Fade('#{@message.id}')", :url => { :controller => 'message', :action => 'destroy', :id => @message.id }, :confirm => 'Are you sure you want to delete this message permanently?', :post => true) %>
+</div>

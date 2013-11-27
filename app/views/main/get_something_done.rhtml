@@ -1,0 +1,35 @@
+<% @page_title = "I can get something done!" %>
+<% @page_desc = "Tutorial on using heyudo.com to find new jobs to bid on"%>
+<div id="needSomething">
+<h1>Want to get something done for someone?</h1>
+<div id="needSomethingBody">
+<%= image_tag ("tut_mascot.png", :alt => "Hello! I'm the masot.", :class => "tutMascotGetSomething")%>
+<div id="needSomethingParagraph">
+<p>Well you're at the right place. Heyudo is the one place to go where you can find people 
+guaranteed to be interested in your services! Users create "posts" with details on what kind 
+of service they need performed and the best part is, you name your price.</p>
+<p>Just search or browse for a post that fits your 
+area of expertise and place a competitive bid on it.
+When the post ends, the user will select the 
+one bid they like best. You don't have to be the lowest bidder to win though. The poster can 
+pick ANY of the bids placed. They may base their decision on your reputation, the information 
+you entered about your self/company, or price.</p>
+</div>
+<div id="needSomethingTutorial">
+<h2>How does it work?</h2>
+<p>First, just login using the login box on the top of the page:</p>
+<%= image_tag ("tut_login_box.png", :alt => "Login box image") %>
+<p>Click on "search" or "browse" in your navigation bar:</p>
+<%= image_tag ("tut_nav_bar.png", :alt => "Navigation bar image") %>
+<p>Then just type a plain english description of what you do in the search box:</p>
+<%= image_tag ("tut_search.png", :alt => "Search image")%>
+<p>Or browse for potential jobs based on category:</p>
+<%= image_tag ("tut_categories.png", :alt => "Categories image")%>
+<p>Then just place a reasonable bid.</p>
+<p>That's it! At the end of the post, the poster will select who they want to give their business to. 
+And remember, you don't have to be the lowest bidder to win. You can also revise your bid as many times 
+as you want before the end of the post.</p>
+<span id="tutSignupLink"><%= link_to image_tag("signup_now_white_back.png", :alt => "Signup now!"), :controller => 'account', :action => 'signup' %></span>
+</div>
+</div>
+</div>

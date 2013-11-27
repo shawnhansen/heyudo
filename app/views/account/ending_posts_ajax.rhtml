@@ -1,0 +1,25 @@
+<h3>Posts ending soon</h3>
+    <table cellspacing="0" class="blackBorder">
+      <thead>
+        <tr>
+          <th>Post Title</th>
+          <th>Ending On</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @zebra = 0 %>
+      <% for post in @posts do %>
+        <% @zebra = (@zebra + 1) %>
+        <% if @zebra % 2 == 1 %>
+        <tr class="zebraOdd">
+        <% else %>
+        <tr>
+        <% end %>
+          <td><%= link_to post.title, :controller => 'post', :action => 'show', :id => post %></td>
+          <td><%=h post.end_date %></td>
+        </tr>
+      <% end %>
+      <%= link_to 'Previous page', { :page => @post_pages.current.previous } if @post_pages.current.previous %>
+      <%= link_to 'Next page', { :page => @post_pages.current.next } if @post_pages.current.next %>
+      </tbody>
+    </table>

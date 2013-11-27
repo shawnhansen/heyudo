@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="223"
+   name=""
+   committed-date="2006-10-15T18:10:37.345946Z"
+   url="http://svn.heyudo.com/heyudosvn/db/migrate"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   prop-time="2007-03-02T16:40:56.251318Z"
+   revision="224"/>
+<entry
+   committed-rev="223"
+   name="002_create_videos.rb"
+   text-time="2007-03-02T16:40:56.256318Z"
+   committed-date="2006-10-15T18:10:37.345946Z"
+   checksum="40d2ff3c6d23acdb5db0824211a95fdc"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:56.238318Z"/>
+<entry
+   committed-rev="92"
+   name="001_add_sessions.rb"
+   text-time="2007-03-02T16:40:56.263318Z"
+   committed-date="2006-08-13T01:04:36.421868Z"
+   checksum="0737a868456d89b29294e8a18494c8c1"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:56.244318Z"/>
+</wc-entries>

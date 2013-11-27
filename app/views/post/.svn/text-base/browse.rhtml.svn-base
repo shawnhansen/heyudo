@@ -1,0 +1,21 @@
+<% @page_title = "Browse Posts" %>
+<% @page_desc = "Use a tag cloud to browse all active posts on the site"%>
+<div id="categories">
+<h1>Browse</h1>
+<p>
+This crazy thing is called a "tag cloud". We analyze all of the post titles on Heyudo and look 
+for the most popular words people use. The more popular the word the bigger it appears. This gives you 
+a quick and easy way to find out what people are posting about. Think of them kind of like "Super 
+Categories" 
+</p>
+<p class="cloudFontP">
+<% if @tags.empty? %>
+<span id="cloudFont" style="font-size:40px">Holy cow! No posts yet. Tempting to be the first one, isn't it?</span>
+<% end %>
+<% for tag in @tags do %>
+<% @tag_percentage = ((tag.num.to_f / @tag_total.to_f) * 100).round%>
+<% @font_size = @tag_percentage * 3 %>
+<%='<span id="cloudFont" style="font-size:' + @font_size.to_s + 'px;">'%><%= link_to tag.name, :action => 'show_search', :query => tag.name%></span>
+<% end %>
+</p>
+</div>

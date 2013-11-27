@@ -1,0 +1,11 @@
+<p class="whatsThisClose"><%= link_to_remote("Close [X]", 
+      :update => 'whatsThisBoxAccountShowReputation', 
+      :complete => visual_effect(:blind_up, 'whatsThisBoxAccountShowReputation'), 
+      :url => { :controller => 'account', 
+      :action => 'reputation_whats_this'}) %></p>
+<p>Reputation is an quick and easy way to view the overall performance of a user. After a user 
+finishes a job for you, you can rate their performance from your dashboard. You can enter a 
+line or two about your experience and also give the bidder a "Thumbs up" or "Thumbs down" rating.</p>
+<p>Everybody starts with 1000 points Thumbs up adds 10 points to the bidders "Reputation", Thumbs 
+down subtracts 10 points. You can view all of a user's detailed information by just clicking on their 
+username anywhere on the site.</p>

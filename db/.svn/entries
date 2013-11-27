@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="223"
+   name=""
+   committed-date="2006-10-15T18:10:37.345946Z"
+   url="http://svn.heyudo.com/heyudosvn/db"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   committed-rev="167"
+   name="heyudowork_development.sql.gz"
+   text-time="2007-03-02T16:40:56.292318Z"
+   committed-date="2006-09-01T14:23:34.006893Z"
+   checksum="53042ad1c7c5226af7e1e2d6e9a9bf5a"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:56.022318Z"/>
+<entry
+   committed-rev="92"
+   name="schema.rb"
+   text-time="2007-03-02T16:40:56.344318Z"
+   committed-date="2006-08-13T01:04:36.421868Z"
+   checksum="63ac26b35d99d84fbe637e5da16d53b9"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:56.028318Z"/>
+<entry
+   name="migrate"
+   kind="dir"/>
+</wc-entries>

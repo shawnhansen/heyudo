@@ -1,0 +1,6 @@
+<%= error_messages_for 'bid' %>
+
+<!--[form:post]-->
+<p><label for="bid_amount"></label><br/>
+$<%= text_field 'bid', 'amount', :size => 4, :class => "bidEntry" %>.00</p>
+<!--[eoform:post]-->

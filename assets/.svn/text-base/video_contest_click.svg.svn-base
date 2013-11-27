@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+   inkscape:export-filename="C:\Documents and Settings\Jason\My Documents\Projects\heyudo\public\images\video_contest_click.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docbase="C:\Documents and Settings\Jason\My Documents\Projects\heyudo\assets"
+   sodipodi:docname="video_contest_click.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4530">
+      <stop
+         style="stop-color:#d8d8d8;stop-opacity:1;"
+         offset="0"
+         id="stop4532" />
+      <stop
+         style="stop-color:white;stop-opacity:1;"
+         offset="1"
+         id="stop4534" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4530"
+       id="linearGradient4536"
+       x1="380"
+       y1="534.36218"
+       x2="380"
+       y2="453.36218"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.5788,0,0,1.011153,87.36981,-5.296306)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="366.5"
+     inkscape:cy="577.5"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1108"
+     inkscape:window-height="794"
+     inkscape:window-x="36"
+     inkscape:window-y="70" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:url(#linearGradient4536);fill-opacity:1;stroke:white;stroke-width:1.56140566;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1872"
+       width="183.4796"
+       height="43.479595"
+       x="207.76021"
+       y="453.12238" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text7199"
+       y="493.19211"
+       x="236.08167"
+       style="font-size:54.57483292px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:black;fill-opacity:0.04605264;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       xml:space="preserve"><tspan
+         y="493.19211"
+         x="236.08167"
+         id="tspan7201"
+         sodipodi:role="line">Click</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25.72310066px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff8d01;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       x="221.45128"
+       y="484.11993"
+       id="text6310"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6312"
+         x="221.45128"
+         y="484.11993">Click to enter!</tspan></text>
+  </g>
+</svg>

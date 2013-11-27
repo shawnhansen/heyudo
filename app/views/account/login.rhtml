@@ -1,0 +1,27 @@
+<% @page_title = "Login" %>
+<div id="accountLogin">
+<%= start_form_tag :action=> "login" %>
+  <fieldset>
+    <legend>Please login</legend>
+      <% if @message %>
+        <div id="message"><%= @message %></div>
+      <% end %>
+    <p>
+      <label for="user_login">Username:</label>
+      <input type="text" name="user_login" id="user_login" size="30" value=""/>
+    </p>
+    <p>
+      <label for="user_password">Password:</label>
+      <input type="password" name="user_password" id="user_password" size="30"/>
+    </p>
+    <p>
+      <input type="submit" name="login" value="Login &#187;" class="submit" />
+    </p>
+  </fieldset>
+<%= end_form_tag %>
+</div>
+
+<div id="accountLoginLinks">
+<p>Don't have an account? <%= link_to "signup", :action=>"signup"%> for one!</p>
+<p>Forgot your password <%= link_to "Click here", :action=>"forgot_password"%>
+</div>

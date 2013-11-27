@@ -1,0 +1,36 @@
+<% if @session['user'].nil? %>
+<h3>You must be <%= link_to "logged in", :controller => 'account', :action => 'login'%> to 
+send messages to users. If you don't have an account you can always 
+<%= link_to "sign up", :controller => 'account', :action => 'signup'%> for one</h3>
+<%= link_to_remote("#{image_tag('cancel_button.png', :alt => 'Cancel')}", 
+        :update => 'messageBox' , 
+        :complete => visual_effect(:fade, 'messageBox'), 
+        :url => { :controller => 'message', 
+        :action => 'send_message', 
+        :receiver => @post.user.id, 
+        :post => @post.id}) %>
+<% else %>
+<% if @post.end_date < Time.now.to_date %>
+<h3>Sorry, messages cannot be sent to users about an expired post</h3>
+<%= link_to_remote("Cancel", :update => 'messageBox' , :complete => "new Effect.Fade('messageBox')", :url => { :controller => 'message', :action => 'send_message', :receiver => @post.user.id, :post => @post.id}) %>
+<% else %>
+<div id="messageSend">
+<h3>To: <%=h @receiver.login %></h3>
+<h3>Regarding: "<%=h @post.title %>"</h3>
+</div>
+
+<div id="messageSendForm">
+<%= start_form_tag ({:action => 'sent_message', :receiver => @receiver.id, :post => @post.id}, :multipart => true) %>
+  <%= render :partial => 'form' %>
+  <%= image_submit_tag "message_send_button.png", :alt => "Send" %> 
+  <%= link_to_remote("#{image_tag('cancel_button.png', :alt => 'Cancel')}", 
+        :update => 'messageBox' , 
+        :complete => visual_effect(:fade, 'messageBox'), 
+        :url => { :controller => 'message', 
+        :action => 'send_message', 
+        :receiver => @post.user.id, 
+        :post => @post.id}) %>
+<%= end_form_tag %>
+</div>
+<% end %>
+<% end %>

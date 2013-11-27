@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="29"
+   name=""
+   committed-date="2006-08-04T14:48:09.220843Z"
+   url="http://svn.heyudo.com/heyudosvn/vendor/plugins/file-column"
+   last-author="heyudo"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   name="test"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="Rakefile"
+   text-time="2007-03-02T16:41:04.097318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="9d39764376c68cd5d673852ada2ec87c"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:02.048318Z"/>
+<entry
+   name="doc"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="TODO"
+   text-time="2007-03-02T16:41:04.105318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="4e6ef71c181afa4a54ba63781914b938"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:02.054318Z"/>
+<entry
+   committed-rev="1"
+   name="init.rb"
+   text-time="2007-03-02T16:41:04.143318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="9750308d8f1c5dbd0af7046200a1d8e8"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:03.309318Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="CHANGELOG"
+   text-time="2007-03-02T16:41:04.324318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="a81fbdb93f954ad74899895ecb0fabe3"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:03.967318Z"/>
+<entry
+   committed-rev="1"
+   name="README"
+   text-time="2007-03-02T16:41:04.381318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="c2957d66d295b55ce66368cde9889a1e"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:04.038318Z"/>
+</wc-entries>

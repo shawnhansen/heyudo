@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2006-08-02T15:35:03.880584Z"
+   url="http://svn.heyudo.com/heyudosvn/vendor/plugins/file-column/doc/classes/FileColumn"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   name="ClassMethods.src"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="ClassMethods.html"
+   text-time="2007-03-02T16:41:02.782318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="5f2ecf528129c88899ea0d57452910ee"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:02.761318Z"/>
+<entry
+   committed-rev="1"
+   name="Magick.html"
+   text-time="2007-03-02T16:41:02.789318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="8d0ec49d1f8ab07bf6c12b4a340ab6f2"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:02.770318Z"/>
+</wc-entries>

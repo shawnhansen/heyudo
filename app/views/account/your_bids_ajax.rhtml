@@ -1,0 +1,34 @@
+   <div id="yourBidsNav">
+    <%= link_to_remote("#{image_tag('active_bids_button.png', :alt => 'Active bids')}", :update => 'dashTableBox', :url => { :action => :active_bids_ajax }) %> <% if @won_posts_num.length > 0 %><%= link_to_remote("#{image_tag('posts_youve_won_button_bing.png', :alt => 'Posts youve won')}", :update => 'dashTableBox', :url => { :action => :posts_you_won_ajax }) %><% else %><%= link_to_remote("#{image_tag('posts_youve_won_button.png', :alt => 'Posts youve won')}", :update => 'dashTableBox', :url => { :action => :posts_you_won_ajax }) %><% end %> <%= link_to_remote("#{image_tag('archived_wins_button.png', :alt => 'Archived wins')}", :update => 'dashTableBox', :url => { :action => :your_archived_wins_ajax }) %>
+   </div>
+    
+    <div id="dashTableBox">
+    <h3>Your Active Bids:</h3>
+    <table cellspacing="0" class="blackBorder">
+      <thead>
+        <tr>
+          <th>Post Title</th>
+          <th>Ending On</th>
+          <th>Your Bid</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @zebra = 0 %>
+      <% for bid in @bidded_on.reverse do %>
+        <% @zebra = (@zebra + 1) %>
+        <% if @zebra % 2 == 1 %>
+        <tr class="zebraOdd">
+        <% else %>
+        <tr>
+        <% end %>
+          <td><%= link_to bid.post.title, :controller => 'post', :action => 'show', :id => bid.post %></td>
+          <td><%=h bid.post.end_date %></td>
+          <td>$ <%=h bid.amount %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+    <p class="infoMessages">We'll keep all of the active posts you've placed a bid on here. Check 
+                                back often. Remember, you can always change your bid on any active 
+                                post.</p>
+  </div>

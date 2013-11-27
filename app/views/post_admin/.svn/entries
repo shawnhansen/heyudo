@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2006-08-02T15:35:03.880584Z"
+   url="http://svn.heyudo.com/heyudosvn/app/views/post_admin"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   committed-rev="1"
+   name="list.rhtml"
+   text-time="2007-03-02T16:40:55.707318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="78e1534cd8058b08aba8b63933e679a8"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:55.620318Z"/>
+<entry
+   committed-rev="1"
+   name="show.rhtml"
+   text-time="2007-03-02T16:40:55.715318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="2ddfd6d5558a7518796c9a09d403e49d"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:55.625318Z"/>
+<entry
+   committed-rev="1"
+   name="_form.rhtml"
+   text-time="2007-03-02T16:40:55.725318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="f03d48f37c4c7ed584e1de934c53219c"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:55.632318Z"/>
+<entry
+   committed-rev="1"
+   name="edit.rhtml"
+   text-time="2007-03-02T16:40:55.739318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="d8b3d7387664810d3e7b5d9854ea210b"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:55.691318Z"/>
+<entry
+   committed-rev="1"
+   name="new.rhtml"
+   text-time="2007-03-02T16:40:55.756318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="b12e251bfc848355c9c50af6bf7af0c4"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:40:55.697318Z"/>
+</wc-entries>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2006-08-02T15:35:03.880584Z"
+   url="http://svn.heyudo.com/heyudosvn/vendor/plugins/file-column/doc/classes/FileColumn/ClassMethods.src"
+   last-author="jasbur"
+   kind="dir"
+   uuid="7f239c81-0a1a-0410-ad45-8493612650ee"
+   repos="http://svn.heyudo.com/heyudosvn"
+   revision="224"/>
+<entry
+   committed-rev="1"
+   name="M000003.html"
+   text-time="2007-03-02T16:41:02.748318Z"
+   committed-date="2006-08-02T15:35:03.880584Z"
+   checksum="44faf1e9d9245f202ba8aa14c580267a"
+   last-author="jasbur"
+   kind="file"
+   prop-time="2007-03-02T16:41:02.736318Z"/>
+</wc-entries>

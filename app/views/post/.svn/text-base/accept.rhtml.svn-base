@@ -1,0 +1,13 @@
+<div id="postAccept">
+<h1>Accept the winning bid for "<%=h @post.title %>"</h1>
+<ul>
+<% for bid in @bids.reverse do %>
+<% if @post.rate == "Hourly rate" %>
+<li><%= link_to "#{image_tag('accept_this_bid_button.png')}", :action => 'accepted', :id => bid.user.id, :amount => bid.amount, :post => @post.id, :amount => bid.amount %> $<%= bid.amount %>/hr by <%= link_to bid.user.login, :controller => 'account', :action => 'show', :id => bid.user_id %></li>
+<% else %>
+<li><%= link_to "#{image_tag('accept_this_bid_button.png')}", :action => 'accepted', :id => bid.user.id, :amount => bid.amount, :post => @post.id, :amount => bid.amount %> $<%= bid.amount %> by <%= link_to bid.user.login, :controller => 'account', :action => 'show', :id => bid.user_id %></li>
+<% end %>
+<% end %>
+</ul>
+<%= link_to "Show all bids for this post", :action => 'accept_all', :post => @post.id %>
+</div>
